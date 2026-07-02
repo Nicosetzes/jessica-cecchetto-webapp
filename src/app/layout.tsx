@@ -1,15 +1,13 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Manrope } from "next/font/google";
+import type { Metadata } from "next";
+import PageWrapper from "@/views/components/layout/PageWrapper";
+import { Footer, Navbar } from "@/views/components/layout";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const manrope = Manrope({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-manrope",
 });
 
 export const metadata: Metadata = {
@@ -23,8 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+    <html lang="en" className={`${manrope.variable}`}>
+      <body>
+        <Navbar />
+        <PageWrapper>{children}</PageWrapper>
+        <Footer />
+      </body>
     </html>
   );
 }
