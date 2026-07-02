@@ -1,17 +1,6 @@
-type NavbarContactProps = {
-  fill?: string;
-  height?: number;
-  size?: number;
-  width?: number;
-} & React.SVGProps<SVGSVGElement>;
+import type { SVG } from "@/shared/types";
 
-const NavbarContact = ({
-  fill,
-  height,
-  size,
-  width,
-  ...props
-}: NavbarContactProps) => {
+const NavbarContact = ({ fill, height, size, width, ...props }: SVG) => {
   return (
     <svg
       fill="none"

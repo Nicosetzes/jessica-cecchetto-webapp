@@ -1,10 +1,4 @@
-type CrossProps = {
-  fill?: string;
-  filled?: boolean;
-  height?: number;
-  size?: number;
-  width?: number;
-} & React.SVGProps<SVGSVGElement>;
+import type { SVG } from "@/shared/types";
 
 const Cross = ({
   fill = "var(--color-text-light)",
@@ -13,7 +7,7 @@ const Cross = ({
   size,
   width,
   ...props
-}: CrossProps) => {
+}: SVG) => {
   return (
     <svg
       width={size || width || 24}

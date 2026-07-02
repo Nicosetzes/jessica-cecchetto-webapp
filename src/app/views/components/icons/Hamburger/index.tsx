@@ -1,10 +1,4 @@
-type HamburgerProps = {
-  fill?: string;
-  filled?: boolean;
-  height?: number;
-  size?: number;
-  width?: number;
-} & React.SVGProps<SVGSVGElement>;
+import type { SVG } from "@/shared/types";
 
 const Hamburger = ({
   fill = "var(--color-text-light)",
@@ -13,7 +7,7 @@ const Hamburger = ({
   size,
   width,
   ...props
-}: HamburgerProps) => {
+}: SVG) => {
   return (
     <svg
       width={size || width || 40}

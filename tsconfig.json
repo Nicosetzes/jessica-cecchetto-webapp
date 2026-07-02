@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["./src/app/*"],
+      "@/shared/*": ["./src/app/shared/*"],
       "@/views/*": ["./src/app/views/*"]
     }
   },
