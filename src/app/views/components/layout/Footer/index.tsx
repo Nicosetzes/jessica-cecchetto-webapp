@@ -1,13 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles.module.css";
-import MENU from "../menu";
 
 const Footer = () => {
   const year = new Date().getFullYear();
-
-  const footerLinks = MENU.filter(({ href }) => href !== "/contact");
-  const contactLink = MENU.find(({ href }) => href === "/contact");
 
   return (
     <footer className={styles.footer}>
@@ -31,42 +27,45 @@ const Footer = () => {
         <div className={styles.column}>
           <h3 className={styles.columnTitle}>Menu</h3>
           <ul className={styles.linkList}>
-            {footerLinks.map(({ href, label }) => (
-              <li key={href}>
-                <Link href={href} className={styles.link}>
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className={styles.column}>
-          <h3 className={styles.columnTitle}>Contact</h3>
-          <ul className={styles.linkList}>
             <li>
-              <Link href={contactLink?.href ?? "#"} className={styles.link}>
-                {contactLink?.label ?? "Contact"}
+              <Link href={"/"} className={styles.link}>
+                Home
               </Link>
             </li>
             <li>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                LinkedIn
-              </a>
+              <Link href={"/about"} className={styles.link}>
+                About
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                Instagram
-              </a>
+              <Link href={"/contact"} className={styles.link}>
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link href={"/self-assessment"} className={styles.link}>
+                Self-Assessment
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className={styles.column}>
+          <h3 className={styles.columnTitle}>Therapy</h3>
+          <ul className={styles.linkList}>
+            <li>
+              <Link href={"/therapy"} className={styles.link}>
+                Overview
+              </Link>
+            </li>
+            <li>
+              <Link href={"/therapy/individual"} className={styles.link}>
+                Individual
+              </Link>
+            </li>
+            <li>
+              <Link href={"/therapy/group"} className={styles.link}>
+                Group
+              </Link>
             </li>
           </ul>
         </div>

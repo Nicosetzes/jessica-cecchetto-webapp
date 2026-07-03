@@ -216,7 +216,7 @@ const Navbar = ({ menu = MENU }) => {
                                 ICONS[item.iconKey as keyof typeof ICONS],
                                 {
                                   fill: active
-                                    ? "var(--color-1)"
+                                    ? "var(--color-primary)"
                                     : "var(--color-text-light)",
                                   height: 24,
                                   width: 24,
@@ -292,7 +292,7 @@ const Navbar = ({ menu = MENU }) => {
                               ICONS[item.iconKey as keyof typeof ICONS],
                               {
                                 fill: active
-                                  ? "var(--color-1)"
+                                  ? "var(--color-primary)"
                                   : "var(--color-text-light)",
                                 height: 24,
                                 width: 24,

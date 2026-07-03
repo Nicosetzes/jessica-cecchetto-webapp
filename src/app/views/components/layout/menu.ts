@@ -29,6 +29,7 @@ const MENU: Menu = [
     ],
     description: "My therapy sessions",
     href: "/therapy",
+    iconKey: "NavbarTherapy",
     label: "Therapy",
   },
   {
@@ -47,7 +48,7 @@ const MENU: Menu = [
     cta: true,
     description: "Try my screening test to assess your current situation",
     href: "/self-assessment",
-    iconKey: "NavbarScreeningTest",
+    iconKey: "NavbarSelfAssessment",
     label: "Self assessment",
   },
 ];

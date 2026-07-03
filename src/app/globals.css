@@ -5,9 +5,9 @@
   --background-3: #f3f5f2;
   --background-4: #ffffff;
   --background-5: #faf9f6;
-  --color-1: #6f8f72;
-  --color-1-hover: #5d7b61;
+  --background-6: #f4f6fa;
   --color-border: #d9e1d7;
+  --color-card-background: #efefef;
   --color-text: #2d312f;
   --color-text-light: #5f6762;
   --color-cta-text: #ffffff;
@@ -15,6 +15,10 @@
   --color-cta-background-hover: #5d7b61;
   --color-disabled: #b8c0ba;
   --color-navbar-background: rgba(250, 249, 246, 0.9);
+  --color-primary: #6f8f72;
+  --color-primary-hover: #5d7b61;
+  --color-secondary: #7687a5;
+  --color-secondary-hover: #657694;
 
   --font-size-sm: 14px;
   --font-size-rg: 16px;
@@ -85,10 +89,6 @@ svg {
 
 /* Reusable classes */
 
-.wrapper {
-  margin: 0 auto;
-}
-
 .section {
   align-items: center;
   display: flex;
@@ -114,6 +114,10 @@ svg {
 .title-xl {
   font-size: calc(var(--font-size-4xl) - 0.5rem);
   font-weight: 800;
+}
+
+.wrapper {
+  margin: 0 auto;
 }
 
 /* Enable hover only on non-touch devices */

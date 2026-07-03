@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--color-1);
+  background-color: var(--color-primary);
   color: #fff;
   width: 100%;
 }
@@ -85,13 +85,7 @@
   font-size: 0.8rem;
 }
 
-@media (min-width: 640px) {
-  .inner {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 992px) {
+@media (min-width: 800px) {
   .inner {
     grid-template-columns: 2fr 1fr 1fr 1fr;
   }

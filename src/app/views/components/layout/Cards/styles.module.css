@@ -1,0 +1,37 @@
+.cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(300px, 100%), 1fr)
+  ); /* The min() function applies the smaller value of the two passed, to prevent overflow below 300px */
+  justify-items: center;
+  width: 100%;
+}
+
+.card {
+  align-items: center;
+  background-color: var(--color-card-background);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 425px;
+  padding: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.card h3 {
+  font-size: var(--font-size-lg);
+  margin: 1.5rem 0 1rem 0;
+}
+
+.card p {
+  line-height: 150%;
+}
+
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,6 +1,15 @@
+export { default as Anxiety } from "./Anxiety";
 export { default as Chevron } from "./Chevron";
 export { default as Cross } from "./Cross";
+export { default as Depression } from "./Depression";
+export { default as Expatriate } from "./Expatriate";
+export { default as LifeChanges } from "./LifeChanges";
+export { default as Grief } from "./Grief";
 export { default as Hamburger } from "./Hamburger";
+export { default as Migration } from "./Migration";
 export { default as NavbarAbout } from "./NavbarAbout";
 export { default as NavbarContact } from "./NavbarContact";
 export { default as NavbarHome } from "./NavbarHome";
+export { default as NavbarSelfAssessment } from "./NavbarSelfAssessment";
+export { default as NavbarTherapy } from "./NavbarTherapy";
+export { default as SelfEsteem } from "./SelfEsteem";
