@@ -95,7 +95,7 @@ svg {
   flex-direction: column;
   margin: 0 auto;
   max-width: var(--section-max-width);
-  padding-top: var(--section-padding-block);
+  padding-block: var(--section-padding-block);
   padding-inline: var(--section-padding-inline-sm);
 }
 

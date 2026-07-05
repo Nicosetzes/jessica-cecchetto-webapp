@@ -2,7 +2,6 @@
   background: var(--background-3);
   border-top: 1px solid var(--color-border);
   gap: 4rem;
-  padding-bottom: var(--section-padding-block);
 }
 
 .closureSection h2 {
@@ -61,7 +60,7 @@
 }
 
 .card p {
-  color: var(--color-text-secondary);
+  color: var(--color-text);
   flex: 1;
   line-height: 150%;
 }

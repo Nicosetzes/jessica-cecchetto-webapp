@@ -1,4 +1,4 @@
-import { cards } from "./cards";
+import { CARDS } from "./constants";
 import styles from "./styles.module.css";
 import { Cards, Closure } from "@/views/components/layout";
 
@@ -28,7 +28,7 @@ export default function IndividualTherapy() {
               with life&apos;s challenges.
             </p>
           </div>
-          <Cards cards={cards} />
+          <Cards cards={CARDS} />
         </div>
       </section>
       <section className={`section ${styles.closingSection}`}>
