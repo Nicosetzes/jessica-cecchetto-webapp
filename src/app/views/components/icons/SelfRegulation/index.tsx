@@ -1,6 +1,6 @@
 import type { SVG } from "@/shared/types";
 
-const Migration = ({ fill, height, size, width, ...props }: SVG) => {
+const SelfRegulation = ({ fill, height, size, width, ...props }: SVG) => {
   return (
     <svg
       fill="none"
@@ -11,19 +11,20 @@ const Migration = ({ fill, height, size, width, ...props }: SVG) => {
       {...props}
     >
       <circle cx="12" cy="12" r="8" stroke={fill} strokeWidth="1.5" />
-      <path d="M4 12H20" stroke={fill} strokeWidth="1.5" />
       <path
-        d="M12 4C14.5 6.2 16 9 16 12C16 15 14.5 17.8 12 20"
+        d="M8 10.5C9 9.7 10 9.7 11 10.5C12 11.3 13 11.3 14 10.5C15 9.7 16 9.7 17 10.5"
         stroke={fill}
         strokeWidth="1.5"
+        strokeLinecap="round"
       />
       <path
-        d="M12 4C9.5 6.2 8 9 8 12C8 15 9.5 17.8 12 20"
+        d="M8 13.5C9 12.7 10 12.7 11 13.5C12 14.3 13 14.3 14 13.5C15 12.7 16 12.7 17 13.5"
         stroke={fill}
         strokeWidth="1.5"
+        strokeLinecap="round"
       />
     </svg>
   );
 };
 
-export default Migration;
+export default SelfRegulation;

@@ -1,6 +1,6 @@
 import type { SVG } from "@/shared/types";
 
-const NavbarSelfAssessment = ({ fill, height, size, width, ...props }: SVG) => (
+const EmotionalExpression = ({ fill, height, size, width, ...props }: SVG) => (
   <svg
     fill="none"
     height={size || height || 24}
@@ -10,19 +10,13 @@ const NavbarSelfAssessment = ({ fill, height, size, width, ...props }: SVG) => (
     {...props}
   >
     <path
-      d="M6 3.5H14.5L18.5 7.5V19C18.5 20.1 17.6 21 16.5 21H6C4.9 21 4 20.1 4 19V5.5C4 4.4 4.9 3.5 6 3.5Z"
+      d="M6 5H18C19.7 5 21 6.3 21 8V13C21 14.7 19.7 16 18 16H11L7 19V16H6C4.3 16 3 14.7 3 13V8C3 6.3 4.3 5 6 5Z"
       stroke={fill}
       strokeWidth="1.5"
       strokeLinejoin="round"
     />
     <path
-      d="M14.5 3.5V7.5H18.5"
-      stroke={fill}
-      strokeWidth="1.5"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M8.2 13L10.5 15.3L14.8 11"
+      d="M12 12.8L10.4 11.2C9.8 10.6 9.8 9.6 10.4 9C11 8.4 12 8.5 12.5 9.1L12 9.6L11.5 9.1C12 8.5 13 8.4 13.6 9C14.2 9.6 14.2 10.6 13.6 11.2L12 12.8Z"
       stroke={fill}
       strokeWidth="1.5"
       strokeLinecap="round"
@@ -31,4 +25,4 @@ const NavbarSelfAssessment = ({ fill, height, size, width, ...props }: SVG) => (
   </svg>
 );
 
-export default NavbarSelfAssessment;
+export default EmotionalExpression;

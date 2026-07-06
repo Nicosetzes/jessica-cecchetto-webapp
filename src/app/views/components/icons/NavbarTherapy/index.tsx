@@ -4,8 +4,8 @@ const NavbarTherapy = ({ fill, height, size, width, ...props }: SVG) => (
   <svg
     fill="none"
     height={size || height || 24}
-    width={size || width || 24}
     viewBox="0 0 24 24"
+    width={size || width || 24}
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >

@@ -16,5 +16,6 @@ type Group = {
 export type Groups = Group[];
 
 export type GroupSelectorProps = {
+  color?: string;
   groups: Groups;
 };

@@ -1,6 +1,6 @@
 import type { SVG } from "@/shared/types";
 
-const ImproveMood = ({ fill, height, size, width, ...props }: SVG) => (
+const Communication = ({ fill, height, size, width, ...props }: SVG) => (
   <svg
     fill="none"
     height={size || height || 24}
@@ -10,19 +10,18 @@ const ImproveMood = ({ fill, height, size, width, ...props }: SVG) => (
     {...props}
   >
     <path
-      d="M4 17C6.5 14 9 13 11.5 14.5C13.5 15.7 15.2 14.8 18 10"
+      d="M5 6H13C14.7 6 16 7.3 16 9V12C16 13.7 14.7 15 13 15H9L6 18V15H5C3.9 15 3 14.1 3 13V8C3 6.9 3.9 6 5 6Z"
       stroke={fill}
       strokeWidth="1.5"
-      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
-      d="M16 10H18V12"
+      d="M16 9H19C20.1 9 21 9.9 21 11V15C21 16.1 20.1 17 19 17H18V20L15 17"
       stroke={fill}
       strokeWidth="1.5"
-      strokeLinecap="round"
       strokeLinejoin="round"
     />
   </svg>
 );
 
-export default ImproveMood;
+export default Communication;

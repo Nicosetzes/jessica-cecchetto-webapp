@@ -1,6 +1,6 @@
 import type { SVG } from "@/shared/types";
 
-const Grief = ({ fill, height, size, width, ...props }: SVG) => {
+const GradualExposure = ({ fill, height, size, width, ...props }: SVG) => {
   return (
     <svg
       fill="none"
@@ -10,28 +10,25 @@ const Grief = ({ fill, height, size, width, ...props }: SVG) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <rect
-        x="9"
-        y="9"
-        width="6"
-        height="10"
-        rx="1"
-        stroke={fill}
-        strokeWidth="1.5"
-      />
+      <circle cx="6" cy="18" r="0.8" fill={fill} />
+      <circle cx="9" cy="15" r="0.8" fill={fill} />
+      <circle cx="12" cy="12" r="0.8" fill={fill} />
+      <circle cx="15" cy="9" r="0.8" fill={fill} />
       <path
-        d="M12 4C13.5 5.4 13.5 7 12 8.5C10.5 7 10.5 5.4 12 4Z"
-        stroke={fill}
-        strokeWidth="1.5"
-      />
-      <path
-        d="M7 20H17"
+        d="M18 6V18"
         stroke={fill}
         strokeWidth="1.5"
         strokeLinecap="round"
+      />
+      <path
+        d="M18 6L21 7.5L18 9"
+        stroke={fill}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
 };
 
-export default Grief;
+export default GradualExposure;

@@ -68,7 +68,7 @@
 }
 
 .goal {
-  align-items: flex-start;
+  align-items: center;
   background: white;
   border: 1px solid var(--color-border);
   border-radius: 14px;
@@ -78,6 +78,7 @@
   line-height: 1.6;
   padding: 1.5rem 2rem;
   position: relative;
+  text-align: center;
 }
 
 .goal h3 {
@@ -86,5 +87,7 @@
 }
 
 .goal svg {
-  margin: 0 auto;
+  background: var(--color-primary);
+  border-radius: 100%;
+  margin: 0 auto 1.5rem;
 }

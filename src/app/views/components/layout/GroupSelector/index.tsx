@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const GroupSelector = ({ groups }: GroupSelectorProps) => {
+const GroupSelector = ({ color = "#fff", groups }: GroupSelectorProps) => {
   const [selected, setSelected] = useState(groups[0]);
 
   return (
@@ -52,13 +52,7 @@ const GroupSelector = ({ groups }: GroupSelectorProps) => {
               const Icon = iconKey ? ICONS[iconKey] : null;
               return (
                 <li className={styles.goal} key={title}>
-                  {Icon && (
-                    <Icon
-                      fill="var(--color-secondary)"
-                      height={54}
-                      width={54}
-                    />
-                  )}
+                  {Icon && <Icon fill={color} height={54} width={54} />}
                   <h3>{title}</h3>
                   <p>{description}</p>
                 </li>

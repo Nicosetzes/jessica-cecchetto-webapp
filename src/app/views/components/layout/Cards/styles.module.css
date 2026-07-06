@@ -18,12 +18,16 @@
   align-items: center;
   background-color: var(--color-card-background);
   border-radius: 0.5rem;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
   display: flex;
   flex-direction: column;
   max-width: 425px;
   padding: 3rem;
   text-align: center;
   width: 100%;
+  transition:
+    box-shadow 150ms ease,
+    transform 150ms ease;
 }
 
 .card.numbered {
@@ -46,6 +50,11 @@
   line-height: 150%;
 }
 
+.card svg {
+  background-color: var(--color-secondary);
+  border-radius: 100%;
+}
+
 .number {
   color: var(--color-text);
   font-size: 2.5rem;
@@ -65,6 +74,7 @@
     border-bottom: none;
     grid-template-columns: repeat(3, 1fr);
     padding: 1.5rem;
+    box-shadow: none;
   }
 
   .card.numbered:last-child {

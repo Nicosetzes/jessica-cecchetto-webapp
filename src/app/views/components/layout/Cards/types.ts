@@ -11,5 +11,6 @@ export type Cards = Card[];
 
 export type CardsProps = {
   cards: Cards;
+  color?: string;
   numbered?: boolean;
 };

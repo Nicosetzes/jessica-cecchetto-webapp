@@ -1,19 +1,41 @@
 import {
+  Anxiety,
   BehaviouralActivation,
+  Communication,
   Connection,
   CopingStrategies,
   EmotionalAwareness,
+  EmotionalExpression,
+  HealthyRelationships,
+  GradualExposure,
   ImproveMood,
+  MeaningfulConnections,
   MindsetShift,
+  SelfEsteem,
+  SelfRegulation,
+  SharedSupport,
+  SocialAwareness,
+  Uncertainty,
 } from "@/views/components/icons";
 
 const ICONS = {
+  Anxiety,
   BehaviouralActivation,
+  Communication,
   Connection,
   CopingStrategies,
   EmotionalAwareness,
+  EmotionalExpression,
+  HealthyRelationships,
+  GradualExposure,
   ImproveMood,
+  MeaningfulConnections,
   MindsetShift,
+  SelfEsteem,
+  SelfRegulation,
+  SharedSupport,
+  SocialAwareness,
+  Uncertainty,
 };
 
 export default ICONS;
