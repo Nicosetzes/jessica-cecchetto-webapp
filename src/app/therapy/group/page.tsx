@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
-import { Cards, Closure, GroupSelector } from "@/views/components/layout";
 import { BENEFITS, CARDS, GROUPS } from "./constants";
+import { Cards, Closure, GroupSelector } from "@/views/components/layout";
 
 export default function GroupTherapy() {
   return (
@@ -16,6 +16,15 @@ export default function GroupTherapy() {
           reprehenderit mollitia sapiente vitae, obcaecati aperiam beatae
           repellendus, facere tempore illum!
         </p>
+      </section>
+      <section className={`section ${styles.benefitsSection}`}>
+        <div className={styles.container}>
+          <span className={styles.eyebrow}>Why group therapy works?</span>
+          <h2 className={styles.heading}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugit
+          </h2>
+        </div>
+        <Cards cards={BENEFITS} />
       </section>
       <section className={`section ${styles.interviewSection}`}>
         <div className={styles.interviewCard}>
@@ -41,15 +50,6 @@ export default function GroupTherapy() {
           </h2>
         </div>
         <GroupSelector groups={GROUPS} />
-      </section>
-      <section className={`section ${styles.benefitsSection}`}>
-        <div className={styles.container}>
-          <span className={styles.eyebrow}>Why group therapy works?</span>
-          <h2 className={styles.heading}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugit
-          </h2>
-        </div>
-        <Cards cards={BENEFITS} />
       </section>
       <Closure />
     </>

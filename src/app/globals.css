@@ -116,10 +116,6 @@ svg {
   font-weight: 800;
 }
 
-.wrapper {
-  margin: 0 auto;
-}
-
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
