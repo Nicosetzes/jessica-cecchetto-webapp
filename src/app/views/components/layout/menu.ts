@@ -26,6 +26,7 @@ const MENU: Menu = [
       { href: "/therapy", label: "Overview" },
       { href: "/therapy/individual", label: "Individual" },
       { href: "/therapy/group", label: "Group" },
+      { href: "/therapy/gender-diverse", label: "Gender Diverse" },
     ],
     description: "My therapy sessions",
     href: "/therapy",

@@ -67,6 +67,11 @@ const Footer = () => {
                 Group
               </Link>
             </li>
+            <li>
+              <Link href={"/therapy/gender-diverse"} className={styles.link}>
+                Gender Diverse
+              </Link>
+            </li>
           </ul>
         </div>
         <div className={styles.column}>
@@ -79,7 +84,7 @@ const Footer = () => {
             </li>
             <li>
               <Link href={"#"} className={styles.link}>
-                About GDRP
+                About GDPR
               </Link>
             </li>
           </ul>

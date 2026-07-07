@@ -1,5 +1,6 @@
 import Closure from "@/views/components/layout/Closure";
-import Link from "next/link";
+import PresentationCards from "@/views/components/layout/PresentationCards";
+import { presentationCards } from "./constants";
 import styles from "./styles.module.css";
 
 export default function Therapy() {
@@ -17,32 +18,8 @@ export default function Therapy() {
           growth.
         </p>
       </section>
-      <section className={`section ${styles.cardsSection}`}>
-        <Link href="/therapy/individual" className={styles.card}>
-          <div className={styles.content}>
-            <span className={styles.cardEyebrow}>One-to-one</span>
-
-            <h2>Individual Therapy</h2>
-
-            <p>
-              A confidential space focused entirely on your personal
-              experiences, emotions and goals.
-            </p>
-
-            <span className={styles.link}>Learn more →</span>
-          </div>
-        </Link>
-        <Link href="/therapy/group" className={styles.card}>
-          <div className={styles.content}>
-            <span className={styles.cardEyebrow}>Shared experience</span>
-            <h2>Group Therapy</h2>
-            <p>
-              Connect with others facing similar challenges while developing new
-              perspectives in a professionally guided environment.
-            </p>
-            <span className={styles.link}>Learn more →</span>
-          </div>
-        </Link>
+      <section className={"section"}>
+        <PresentationCards presentationCards={presentationCards} />
       </section>
       <Closure />
     </>
