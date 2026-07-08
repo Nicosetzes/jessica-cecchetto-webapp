@@ -1,4 +1,4 @@
-import type { SVG } from "@/shared/types";
+import type { SVG } from "@/types";
 
 const Grief = ({ fill, height, size, width, ...props }: SVG) => {
   return (

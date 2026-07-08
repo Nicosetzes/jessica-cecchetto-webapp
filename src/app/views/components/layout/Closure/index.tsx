@@ -17,11 +17,13 @@ const Closure = () => {
         <div className={styles.cards}>
           <article className={styles.card}>
             <div className={styles.cardHeader}>
-              <NavbarContact
-                fill="var(--color-secondary)"
-                height={32}
-                width={32}
-              />
+              <div className={styles.iconContainer}>
+                <NavbarContact
+                  fill="var(--color-secondary)"
+                  height={36}
+                  width={36}
+                />
+              </div>
               <h3>Contact me</h3>
             </div>
             <p>
@@ -32,11 +34,13 @@ const Closure = () => {
           </article>
           <article className={styles.card}>
             <div className={`${styles.cardHeader} ${styles.large}`}>
-              <NavbarSelfAssessment
-                fill="var(--color-secondary)"
-                height={32}
-                width={32}
-              />
+              <div className={styles.iconContainer}>
+                <NavbarSelfAssessment
+                  fill="var(--color-secondary)"
+                  height={36}
+                  width={36}
+                />
+              </div>
               <h3>Wondering whether therapy is right for you?</h3>
             </div>
             <p>

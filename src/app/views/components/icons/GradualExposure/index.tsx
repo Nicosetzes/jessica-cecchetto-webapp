@@ -1,4 +1,4 @@
-import type { SVG } from "@/shared/types";
+import type { SVG } from "@/types";
 
 const GradualExposure = ({ fill, height, size, width, ...props }: SVG) => {
   return (

@@ -1,4 +1,4 @@
-import type { SVG } from "@/shared/types";
+import type { SVG } from "@/types";
 
 const NavbarSelfAssessment = ({ fill, height, size, width, ...props }: SVG) => (
   <svg

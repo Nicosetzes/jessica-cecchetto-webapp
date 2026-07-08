@@ -25,8 +25,7 @@
 }
 
 .tab:hover {
-  border-color: var(--color-1);
-  color: var(--color-1);
+  border-color: var(--color-primary);
 }
 
 .tab.active {

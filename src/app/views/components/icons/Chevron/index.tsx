@@ -1,4 +1,4 @@
-import type { SVG } from "@/shared/types";
+import type { SVG } from "@/types";
 
 const Chevron = ({ fill = "#fff", height, size, width, ...props }: SVG) => {
   return (

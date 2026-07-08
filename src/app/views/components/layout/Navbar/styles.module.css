@@ -64,13 +64,13 @@
 }
 
 .link:hover {
-  color: var(--color-1);
+  color: var(--color-primary);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .link:not(.active):not(.cta)::after {
-  background-color: var(--color-1);
+  background-color: var(--color-primary);
   border-radius: 40px;
   bottom: 0;
   content: "";
@@ -210,12 +210,12 @@
 }
 
 .active {
-  color: var(--color-1);
+  color: var(--color-primary);
   font-weight: 500;
 }
 
 .active::after {
-  background-color: var(--color-1);
+  background-color: var(--color-primary);
   border-radius: 40px;
   bottom: 0;
   content: "";
@@ -293,12 +293,12 @@
 
 .dropdownLink:hover {
   background: rgba(0, 0, 0, 0.04);
-  color: var(--color-1);
+  color: var(--color-primary);
   text-decoration: none;
 }
 
 .dropdownLinkActive {
-  color: var(--color-1);
+  color: var(--color-primary);
   font-weight: 500;
 }
 
@@ -348,12 +348,12 @@
 }
 
 .accordionLink:hover {
-  color: var(--color-1);
+  color: var(--color-primary);
   text-decoration: none;
 }
 
 .accordionLinkActive {
-  color: var(--color-1);
+  color: var(--color-primary);
   font-weight: 500;
 }
 

@@ -1,6 +1,8 @@
 export { default as Anxiety } from "./Anxiety";
 export { default as BehaviouralActivation } from "./BehaviouralActivation";
+export { default as Check } from "./Check";
 export { default as Chevron } from "./Chevron";
+export { default as Clipboard } from "./Clipboard";
 export { default as Communication } from "./Communication";
 export { default as Connection } from "./Connection";
 export { default as CopingStrategies } from "./CopingStrategies";
@@ -28,3 +30,4 @@ export { default as SelfRegulation } from "./SelfRegulation";
 export { default as SharedSupport } from "./SharedSupport";
 export { default as SocialAwareness } from "./SocialAwareness";
 export { default as Uncertainty } from "./Uncertainty";
+export { default as Whatsapp } from "./Whatsapp";

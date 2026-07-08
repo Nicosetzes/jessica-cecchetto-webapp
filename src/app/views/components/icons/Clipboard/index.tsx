@@ -1,6 +1,6 @@
 import type { SVG } from "@/types";
 
-const LifeChanges = ({ fill, height, size, width, ...props }: SVG) => {
+const Clipboard = ({ fill, height, size, width, ...props }: SVG) => {
   return (
     <svg
       fill="none"
@@ -10,30 +10,35 @@ const LifeChanges = ({ fill, height, size, width, ...props }: SVG) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
+      <rect
+        x="6"
+        y="4"
+        width="12"
+        height="16"
+        rx="2"
+        stroke={fill}
+        strokeWidth="1.5"
+      />
       <path
-        d="M8 7H5V4"
+        d="M9 4.5C9 3.67 9.67 3 10.5 3H13.5C14.33 3 15 3.67 15 4.5V6H9V4.5Z"
+        stroke={fill}
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9 10H15"
         stroke={fill}
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
-        d="M5 7C6.6 5.1 8.9 4 11.5 4C15.6 4 19 7.4 19 11.5"
-        stroke={fill}
-        strokeWidth="1.5"
-      />
-      <path
-        d="M16 17H19V20"
+        d="M9 14H13"
         stroke={fill}
         strokeWidth="1.5"
         strokeLinecap="round"
-      />
-      <path
-        d="M19 17C17.4 18.9 15.1 20 12.5 20C8.4 20 5 16.6 5 12.5"
-        stroke={fill}
-        strokeWidth="1.5"
       />
     </svg>
   );
 };
 
-export default LifeChanges;
+export default Clipboard;
