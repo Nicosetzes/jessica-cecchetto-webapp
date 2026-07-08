@@ -77,7 +77,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
               >
-                +45 55 24 80 22
+                +45 55 24 80 22 (messages only)
               </a>
             </div>
           </div>
