@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles.module.css";
+import { NavbarContact, Whatsapp } from "@/views/components/icons";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -9,20 +9,26 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.brand}>
-          <Link href="/" className={styles.logoLink}>
-            LOGO
-            {/* <Image
-              src="/images/logo.png"
-              alt="Logo"
-              width={120}
-              height={40}
-              className={styles.logo}
-            /> */}
-          </Link>
-          <p className={styles.tagline}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            euismod, nisl vel tincidunt lacinia.
-          </p>
+          <div className={styles.logoLink}>LOGO</div>
+          <p className={styles.tagline}>[Título] Jésica Cecchetto</p>
+          <div className={styles.socialLinks}>
+            <div>
+              <Whatsapp fill={"#fff"} height={24} width={24} />
+              <a
+                href="https://wa.me/4555248022"
+                target="_blank"
+                rel="noreferrer"
+              >
+                +45 55 24 80 22
+              </a>
+            </div>
+            <div>
+              <NavbarContact fill={"#fff"} height={24} width={24} />
+              <a href="mailto:jesicacecchetto@gmail.com">
+                jesicacecchetto@gmail.com
+              </a>
+            </div>
+          </div>
         </div>
         <div className={styles.column}>
           <h3 className={styles.columnTitle}>Menu</h3>

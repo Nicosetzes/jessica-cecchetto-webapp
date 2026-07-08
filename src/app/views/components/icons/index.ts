@@ -2,7 +2,7 @@ export { default as Anxiety } from "./Anxiety";
 export { default as BehaviouralActivation } from "./BehaviouralActivation";
 export { default as Check } from "./Check";
 export { default as Chevron } from "./Chevron";
-export { default as Clipboard } from "./Clipboard";
+export { default as Copy } from "./Copy";
 export { default as Communication } from "./Communication";
 export { default as Connection } from "./Connection";
 export { default as CopingStrategies } from "./CopingStrategies";

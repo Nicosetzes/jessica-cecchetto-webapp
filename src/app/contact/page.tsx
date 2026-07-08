@@ -3,12 +3,7 @@
 import Link from "next/link";
 import styles from "./styles.module.css";
 import { useCopyToClipboard } from "@/hooks";
-import {
-  Check,
-  Clipboard,
-  NavbarContact,
-  Whatsapp,
-} from "@/views/components/icons";
+import { Check, Copy, NavbarContact, Whatsapp } from "@/views/components/icons";
 
 export default function Contact() {
   const [copy, copiedState] = useCopyToClipboard();
@@ -56,11 +51,7 @@ export default function Contact() {
                 </>
               ) : (
                 <>
-                  <Clipboard
-                    fill="var(--color-secondary)"
-                    height={32}
-                    width={32}
-                  />
+                  <Copy fill="var(--color-secondary)" height={32} width={32} />
                   <span className={styles.copiedText}>Copy to clipboard</span>
                 </>
               )}

@@ -7,48 +7,38 @@ const Closure = () => {
     <div className={styles.wrapper}>
       <section className={`section ${styles.closureSection}`}>
         <div className={styles.header}>
-          <h2>Get in touch</h2>
+          <h2>Next steps</h2>
           <p className={styles.description}>
-            If you have questions about therapy or would like to explore whether
-            we are a good fit, I invite you to get in touch. I&apos;ll be happy
-            to answer your questions and discuss how I can support you.
+            Whether you would like to discuss your situation or take a moment to
+            reflect on your current well-being, the options below can help you
+            decide on your next step.
           </p>
         </div>
         <div className={styles.cards}>
           <article className={styles.card}>
             <div className={styles.cardHeader}>
               <div className={styles.iconContainer}>
-                <NavbarContact
-                  fill="var(--color-secondary)"
-                  height={36}
-                  width={36}
-                />
+                <NavbarContact fill="#fff" height={36} width={36} />
               </div>
               <h3>Contact me</h3>
             </div>
             <p>
-              Have a question or ready to take the next step? I would be happy
-              to hear from you.
+              Reach out to discuss your situation, ask questions, or explore
+              whether therapy may be right for you.
             </p>
             <CTALink href="/contact" label="Contact" />
           </article>
           <article className={styles.card}>
-            <div className={`${styles.cardHeader} ${styles.large}`}>
+            <div className={`${styles.cardHeader}`}>
               <div className={styles.iconContainer}>
-                <NavbarSelfAssessment
-                  fill="var(--color-secondary)"
-                  height={36}
-                  width={36}
-                />
+                <NavbarSelfAssessment fill="#fff" height={36} width={36} />
               </div>
-              <h3>Wondering whether therapy is right for you?</h3>
+              <h3>Self-assessment</h3>
             </div>
             <p>
-              Take the <strong>free</strong> self-assessment questionnaire to
-              reflect on your current situation and explore whether therapy
-              could support you.
+              Take a few minutes to reflect on your current emotional well-being
+              through a brief self-assessment questionnaire.
             </p>
-            <p>It only takes a few minutes.</p>
             <CTALink href="/self-assessment" label="Start Self-Assessment" />
           </article>
         </div>
