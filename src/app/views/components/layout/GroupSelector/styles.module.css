@@ -60,7 +60,7 @@
 .goalList {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(375px, 100%), 1fr));
   list-style: none;
   margin: 0.75rem 0 0 0;
   padding: 0;
