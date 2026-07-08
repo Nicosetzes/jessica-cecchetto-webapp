@@ -1,8 +1,6 @@
 .header {
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.04); */
   backdrop-filter: blur(10px);
   background: var(--color-navbar-background);
-  /* border-bottom: 1px solid var(--color-border); */
   color: var(--color-text);
   height: var(--navbar-height);
   position: fixed;
