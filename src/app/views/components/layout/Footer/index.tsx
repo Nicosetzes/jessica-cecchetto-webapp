@@ -10,7 +10,10 @@ const Footer = () => {
       <div className={styles.inner}>
         <div className={styles.brand}>
           <div className={styles.logoLink}>LOGO</div>
-          <p className={styles.tagline}>[Título] Jésica Cecchetto</p>
+          <div className={styles.tagline}>
+            <p>Jésica Cecchetto (she/her)</p>
+            <p>Psychotherapist</p>
+          </div>
           <div className={styles.socialLinks}>
             <div>
               <Whatsapp fill={"#fff"} height={24} width={24} />

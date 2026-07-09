@@ -40,10 +40,10 @@ const MENU: Menu = [
     label: "About",
   },
   {
-    description: "Contact me",
+    description: "Get in touch with me",
     href: "/contact",
     iconKey: "NavbarContact",
-    label: "Contact",
+    label: "Get in touch",
   },
   {
     cta: true,

@@ -26,7 +26,7 @@ const Closure = () => {
               Reach out to discuss your situation, ask questions, or explore
               whether therapy may be right for you.
             </p>
-            <CTALink href="/contact" label="Contact" />
+            <CTALink href="/contact" label="Get in touch" />
           </article>
           <article className={styles.card}>
             <div className={`${styles.cardHeader}`}>
