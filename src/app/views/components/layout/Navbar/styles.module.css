@@ -19,21 +19,6 @@
   position: relative;
 }
 
-.logoContainer {
-  align-items: center;
-  display: flex;
-  max-width: 80px;
-}
-
-.logoLink {
-  font-size: var(--font-size-3xl);
-  font-weight: 700;
-}
-
-.logoLink:hover {
-  text-decoration: none;
-}
-
 .nav {
   align-items: center;
   display: flex;

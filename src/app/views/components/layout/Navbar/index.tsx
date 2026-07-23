@@ -2,6 +2,7 @@
 
 import ICONS from "./iconsMap";
 import Link from "next/link";
+import { Logo } from "@/views/components/layout";
 import MENU from "../menu";
 import type { MenuItem } from "../menu";
 import styles from "./styles.module.css";
@@ -72,15 +73,7 @@ const Navbar = ({ menu = MENU }) => {
     <header className={styles.header}>
       <div className={styles.inner}>
         <div className={styles.logoContainer}>
-          <Link href="/" className={styles.logoLink} aria-label="Home">
-            LOGO
-            {/* <Image
-              alt="Logo"
-              height={300}
-              src="/images/logo-2.png"
-              width={300}
-            /> */}
-          </Link>
+          <Logo />
         </div>
         <nav className={styles.nav} aria-label="Main navigation" ref={navRef}>
           <ul className={styles.desktopMenu}>

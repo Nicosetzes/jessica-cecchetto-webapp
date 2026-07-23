@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "@/views/components/layout";
 import styles from "./styles.module.css";
 import { NavbarContact, Whatsapp } from "@/views/components/icons";
 
@@ -9,11 +10,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.brand}>
-          <div className={styles.logoLink}>LOGO</div>
-          <div className={styles.tagline}>
-            <p>Jésica Cecchetto (she/her)</p>
-            <p>Psychotherapist</p>
-          </div>
+          <Logo dark />
           <div className={styles.socialLinks}>
             <div>
               <Whatsapp fill={"#fff"} height={24} width={24} />
