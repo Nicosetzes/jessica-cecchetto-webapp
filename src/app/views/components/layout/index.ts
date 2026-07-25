@@ -6,3 +6,4 @@ export { default as Logo } from "./Logo";
 export { default as Navbar } from "./Navbar";
 export { default as PageLoader } from "./PageLoader";
 export { default as PageWrapper } from "./PageWrapper";
+export { default as PracticeInfo } from "./PracticeInfo";

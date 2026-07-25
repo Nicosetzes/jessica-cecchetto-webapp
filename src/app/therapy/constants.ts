@@ -23,9 +23,9 @@ export const presentationCards: PresentationCards = [
     description:
       "An affirming therapeutic space that recognizes gender diversity and supports personal growth, resilience, and emotional well-being.",
     eyebrow: "Gender-affirming",
-    imageAlt: "Gender Diverse Therapy",
+    imageAlt: "Gender-Affirming Therapy",
     imageUrl: "/images/therapy-gender.png",
-    linkUrl: "/therapy/gender-diverse",
-    title: "Gender Diverse Therapy",
+    linkUrl: "/therapy/gender-affirming",
+    title: "Gender-Affirming Therapy",
   },
 ];

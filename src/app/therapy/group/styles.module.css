@@ -28,6 +28,113 @@
   max-width: 720px;
 }
 
+.infoSection {
+  border-bottom: 1px solid var(--color-card-background);
+  width: 100%;
+}
+
+.infoGrid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.infoCard {
+  align-items: center;
+  background: var(--background-3);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.infoCard:last-of-type {
+  background: var(--accent);
+}
+
+.infoCard svg {
+  color: var(--color-primary);
+}
+
+.infoCard strong {
+  color: var(--color-text);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.infoCard span {
+  color: var(--color-text-light);
+}
+
+.infoCard .discountFee {
+  color: var(--color-text);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2.5px;
+}
+
+.discountInfo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.subheading {
+  color: var(--color-text);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-top: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.programmes {
+  display: grid;
+  gap: 1rem;
+  margin-block: 2rem;
+  width: 100%;
+}
+
+.programme,
+.programmesFooter {
+  background: var(--background-2);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.programme {
+  gap: 0.5rem;
+}
+
+.programmesFooter {
+  font-style: italic;
+  line-height: 1.7;
+  width: 100%;
+}
+
+.programmesFooter a {
+  color: var(--color-primary);
+}
+
+.programme strong {
+  color: var(--color-text);
+}
+
+.programme span {
+  color: var(--color-text-light);
+}
+
 .interviewSection {
   border-bottom: var(--color-card-background) 1px solid;
   border-top: var(--color-card-background) 1px solid;
@@ -102,5 +209,21 @@
   .separator {
     height: 1px;
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .infoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .programmes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .infoGrid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -9,9 +9,9 @@ export const OvalSpinner = ({ size }: OvalSpinnerProps) => {
     <Oval
       visible
       ariaLabel="oval-loading"
-      color="var(--color-3)"
+      color="var(--color-primary)"
       height={size || "80"}
-      secondaryColor="var(--danger)"
+      secondaryColor="var(--color-primary)"
       width={size || "80"}
       wrapperStyle={{}}
       wrapperClass=""

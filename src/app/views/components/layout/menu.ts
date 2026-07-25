@@ -26,15 +26,18 @@ const MENU: Menu = [
       { href: "/therapy", label: "Overview" },
       { href: "/therapy/individual", label: "Individual" },
       { href: "/therapy/group", label: "Group" },
-      { href: "/therapy/gender-diverse", label: "Gender Diverse" },
+      {
+        href: "/therapy/gender-affirming",
+        label: "Gender-Affirming",
+      },
     ],
-    description: "My therapy sessions",
+    description: "Explore the therapy services I offer",
     href: "/therapy",
     iconKey: "NavbarTherapy",
     label: "Therapy",
   },
   {
-    description: "About me",
+    description: "Get to know about me and my work",
     href: "/about",
     iconKey: "NavbarAbout",
     label: "About",
@@ -47,7 +50,8 @@ const MENU: Menu = [
   },
   {
     cta: true,
-    description: "Try my screening test to assess your current situation",
+    description:
+      "Try my self-assessment test to evaluate your current situation",
     href: "/self-assessment",
     iconKey: "NavbarSelfAssessment",
     label: "Self assessment",

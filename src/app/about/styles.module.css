@@ -221,7 +221,7 @@
 }
 
 .educationCard:hover {
-  border-color: var(--color-1);
+  border-color: var(--color-primary);
   transform: translateY(-4px);
 }
 
@@ -237,7 +237,7 @@
 }
 
 .educationCard span {
-  color: var(--color-1);
+  color: var(--color-primary);
   font-size: 0.9rem;
   font-weight: 600;
   margin-top: auto;

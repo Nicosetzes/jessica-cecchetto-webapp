@@ -1,9 +1,9 @@
 import styles from "./styles.module.css";
 
-export default function GenderDiverseTherapy() {
+export default function GenderAffirmingCounselling() {
   return (
     <>
-      <div className={"section"}>Gender Diverse Therapy</div>
+      <div className={"section"}>Gender-Affirming Counselling</div>
     </>
   );
 }

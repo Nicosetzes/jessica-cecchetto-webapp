@@ -96,9 +96,11 @@ export default function Contact() {
               <option value="" disabled>
                 Select an option
               </option>
-              <option value="individual">Individual therapy</option>
-              <option value="group">Group therapy</option>
-              <option value="affirmative">Affirmative counseling</option>
+              <option value="individual">Individual Therapy</option>
+              <option value="group">Group Therapy</option>
+              <option value="gender-affirming">
+                Gender-Affirming Counselling
+              </option>
               <option value="unsure">Not sure yet</option>
             </select>
           </div>

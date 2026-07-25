@@ -1,6 +1,6 @@
 import { CARDS } from "./constants";
 import styles from "./styles.module.css";
-import { Cards, Closure } from "@/views/components/layout";
+import { Cards, Closure, PracticeInfo } from "@/views/components/layout";
 
 export default function IndividualTherapy() {
   return (
@@ -18,6 +18,11 @@ export default function IndividualTherapy() {
           matters most to you.
         </p>
       </section>
+      <PracticeInfo
+        duration="60 minutes"
+        price="1000 DKK per session"
+        cancellation="24 hours notice required"
+      />
       <section className={`section ${styles.specialtiesSection}`}>
         <div className={styles.content}>
           <div className={styles.textContent}>

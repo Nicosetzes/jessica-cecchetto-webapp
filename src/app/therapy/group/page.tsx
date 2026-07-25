@@ -1,6 +1,13 @@
+import Link from "next/link";
 import styles from "./styles.module.css";
 import { BENEFITS, CARDS, GROUPS } from "./constants";
 import { Cards, Closure, GroupSelector } from "@/views/components/layout";
+import {
+  SessionDiscount,
+  SessionDuration,
+  SessionFee,
+  SessionGroupSize,
+} from "@/views/components/icons";
 
 export default function GroupTherapy() {
   return (
@@ -16,6 +23,65 @@ export default function GroupTherapy() {
           reprehenderit mollitia sapiente vitae, obcaecati aperiam beatae
           repellendus, facere tempore illum!
         </p>
+      </section>
+      <section className={`section ${styles.infoSection}`}>
+        <div className={styles.container}>
+          <span className={styles.eyebrow}>Practical information</span>
+          <h2 className={styles.heading}>
+            Small groups, structured support and clear goals
+          </h2>
+          <div className={styles.infoGrid}>
+            <article className={styles.infoCard}>
+              <SessionDuration fill="currentColor" size={32} />
+              <strong>75 min</strong>
+              <span>Session length</span>
+            </article>
+            <article className={styles.infoCard}>
+              <SessionGroupSize fill="currentColor" size={32} />
+              <strong>Max 4</strong>
+              <span>Participants</span>
+            </article>
+            <article className={styles.infoCard}>
+              <SessionFee fill="currentColor" size={32} />
+              <strong>700 DKK</strong>
+              <span>Per session</span>
+              <div className={styles.discountInfo}></div>
+            </article>
+            <article className={styles.infoCard}>
+              <SessionDiscount fill="currentColor" size={32} />
+              <h3>Reduced rate available</h3>
+              <span>
+                Book and pay for the full programme in advance to receive a
+                discounted rate of
+                <span className={styles.discountFee}> 600 DKK per session</span>
+                .
+              </span>
+            </article>
+          </div>
+          <h3 className={styles.subheading}>Available programmes</h3>
+          <div className={styles.programmes}>
+            <article className={styles.programme}>
+              <strong>Coping with Depression</strong>
+              <span>20 sessions</span>
+            </article>
+            <article className={styles.programme}>
+              <strong>Loneliness & Social Skills</strong>
+              <span>15 sessions</span>
+            </article>
+            <article className={styles.programme}>
+              <strong>Tools for Anxiety</strong>
+              <span>15 sessions</span>
+            </article>
+          </div>
+          <div className={styles.programmesFooter}>
+            <span>
+              Once the group sessions have concluded, you are welcome to
+              continue with{" "}
+              <Link href="/therapy/individual">individual therapy</Link> for
+              additional support, if desired.
+            </span>
+          </div>
+        </div>
       </section>
       <section className={`section ${styles.benefitsSection}`}>
         <div className={styles.container}>

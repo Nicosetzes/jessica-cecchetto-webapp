@@ -74,8 +74,8 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href={"/therapy/gender-diverse"} className={styles.link}>
-                Gender Diverse
+              <Link href={"/therapy/gender-affirming"} className={styles.link}>
+                Gender-Affirming
               </Link>
             </li>
           </ul>
