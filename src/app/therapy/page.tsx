@@ -1,5 +1,4 @@
-import Closure from "@/views/components/layout/Closure";
-import PresentationCards from "@/views/components/layout/PresentationCards";
+import { Closure, PresentationCards } from "@/views/components/layout";
 import { presentationCards } from "./constants";
 import styles from "./styles.module.css";
 

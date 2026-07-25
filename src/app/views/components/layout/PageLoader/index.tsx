@@ -1,4 +1,4 @@
-import OvalSpinner from "@/views/components/ui/OvalSpinner";
+import { OvalSpinner } from "@/views/components/ui";
 import styles from "./styles.module.css";
 
 export default function PageLoader() {

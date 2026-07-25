@@ -1,4 +1,4 @@
-import CTALink from "../CTALink";
+import { CTALink } from "@/views/components/ui";
 import styles from "./styles.module.css";
 import { NavbarContact, NavbarSelfAssessment } from "@/views/components/icons";
 

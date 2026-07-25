@@ -1,7 +1,8 @@
+import { GroupSelector } from "@/views/components/ui";
 import Link from "next/link";
 import styles from "./styles.module.css";
 import { BENEFITS, CARDS, GROUPS } from "./constants";
-import { Cards, Closure, GroupSelector } from "@/views/components/layout";
+import { Cards, Closure } from "@/views/components/layout";
 import {
   SessionDiscount,
   SessionDuration,
