@@ -20,6 +20,7 @@ export default function About() {
         <div className={styles.imageWrapper}>
           <Image
             fill
+            preload
             alt="Psychotherapist portrait"
             className={styles.image}
             src="/images/jesica-hero.jpg"
