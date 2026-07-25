@@ -1,5 +1,5 @@
 import type { Cards } from "@/views/components/layout/Cards/types";
-import type { Groups } from "@/views/components/layout/GroupSelector/types";
+import type { Groups } from "@/views/components/ui/GroupSelector/types";
 
 export const BENEFITS: Cards = [
   {
