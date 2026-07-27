@@ -59,11 +59,6 @@ const Footer = () => {
           <h3 className={styles.columnTitle}>Therapy</h3>
           <ul className={styles.linkList}>
             <li>
-              <Link href={"/therapy"} className={styles.link}>
-                Overview
-              </Link>
-            </li>
-            <li>
               <Link href={"/therapy/individual"} className={styles.link}>
                 Individual
               </Link>

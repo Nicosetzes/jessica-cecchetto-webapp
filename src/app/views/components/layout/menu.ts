@@ -9,7 +9,7 @@ export type MenuItem = {
   children?: ChildItem[];
   cta?: boolean;
   description?: string;
-  href: string;
+  href?: string;
   iconKey?: string;
   label: string;
 };
@@ -23,7 +23,6 @@ const MENU: Menu = [
   },
   {
     children: [
-      { href: "/therapy", label: "Overview" },
       { href: "/therapy/individual", label: "Individual" },
       { href: "/therapy/group", label: "Group" },
       {
@@ -32,7 +31,6 @@ const MENU: Menu = [
       },
     ],
     description: "Explore the therapy services I offer",
-    href: "/therapy",
     iconKey: "NavbarTherapy",
     label: "Therapy",
   },
