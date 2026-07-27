@@ -1,3 +1,4 @@
+import { CTALink } from "@/views/components/ui";
 import { PROFILE_CONTENT } from "../../constants";
 import type { SelfAssessmentResult } from "@/types";
 import styles from "./styles.module.css";
@@ -20,12 +21,12 @@ const Result = ({ result }: ResultProps) => {
           a professional psychological assessment.
         </div>
         <div className={styles.actions}>
-          <a href="/contact" className={styles.primaryButton}>
-            Get in Touch
-          </a>
-          <a href="/therapy" className={styles.secondaryButton}>
-            Explore Therapy Options
-          </a>
+          <CTALink href="/contact" label="Get in Touch" />
+          <CTALink
+            href="/#therapy-options"
+            label="Explore Therapy Options"
+            variant="secondary"
+          />
         </div>
       </div>
     </section>

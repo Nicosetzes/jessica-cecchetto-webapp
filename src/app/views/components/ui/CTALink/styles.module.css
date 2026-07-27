@@ -4,9 +4,8 @@
   color: var(--color-cta-text);
   display: inline-flex;
   justify-content: center;
-  margin-top: 1rem;
+  max-width: 300px;
   min-width: 150px;
-  max-width: fit-content;
   padding: 0.9rem 1.5rem;
   text-decoration: none;
   transition: 0.2s ease;
@@ -15,4 +14,20 @@
 .cta:hover {
   background: var(--color-cta-background-hover);
   text-decoration: none;
+}
+
+.cta.secondary {
+  background: var(--background-2);
+  border: var(--color-secondary-hover) 1px solid;
+  color: var(--color-secondary-hover);
+}
+
+.cta.secondary:hover {
+  background: var(--color-card-background);
+}
+
+@media (min-width: 768px) {
+  .cta {
+    max-width: fit-content;
+  }
 }

@@ -5,7 +5,13 @@ import { motion } from "framer-motion";
 import styles from "./styles.module.css";
 import type { CardsProps } from "./types";
 
-const Cards = ({ cards, color = "#fff", numbered }: CardsProps) => {
+const Cards = ({
+  cards,
+  numbered,
+  svgBackground,
+  svgColor = "#fff",
+  svgSize = 54,
+}: CardsProps) => {
   return (
     <div className={`${styles.cards} ${numbered ? styles.numbered : ""}`}>
       {cards.map(({ description, iconKey, title }, index) => {
@@ -21,14 +27,22 @@ const Cards = ({ cards, color = "#fff", numbered }: CardsProps) => {
               transition: { delay: 0.125 * index, duration: 0.3 },
             }}
           >
-            {Icon ? <Icon fill={color} height={54} width={54} /> : null}
+            {Icon ? (
+              <Icon
+                className={styles.icon}
+                fill={svgColor}
+                height={svgSize}
+                style={{ background: svgBackground }}
+                width={svgSize}
+              />
+            ) : null}
             {numbered && (
               <span className={styles.number}>
                 {String(index + 1).padStart(2, "0")}
               </span>
             )}
             {title && <h3>{title}</h3>}
-            <p>{description}</p>
+            {description && <p>{description}</p>}
           </motion.div>
         );
       })}

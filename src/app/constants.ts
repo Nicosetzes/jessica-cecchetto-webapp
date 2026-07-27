@@ -1,6 +1,34 @@
-import { PresentationCards } from "@/views/components/layout/PresentationCards/types";
+import type { Cards } from "@/views/components/layout/Cards/types";
+import { PresentationCards } from "./views/components/layout/PresentationCards/types";
 
-export const presentationCards: PresentationCards = [
+export const CARDS: Cards = [
+  {
+    iconKey: "Anxiety",
+    title: "Anxiety",
+  },
+  {
+    iconKey: "Depression",
+    title: "Depression",
+  },
+  {
+    iconKey: "Loneliness",
+    title: "Loneliness",
+  },
+  {
+    iconKey: "Grief",
+    title: "Grief",
+  },
+  {
+    iconKey: "Communication",
+    title: "Social Difficulties",
+  },
+  {
+    iconKey: "GenderAffirmativeModel",
+    title: "Gender-Affirming Counselling",
+  },
+];
+
+export const PRESENTATION_CARDS: PresentationCards = [
   {
     description:
       "A confidential space focused entirely on your personal experiences, emotions and goals.",

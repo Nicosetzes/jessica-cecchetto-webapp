@@ -1,6 +1,5 @@
 import { CTALink } from "@/views/components/ui";
 import styles from "./styles.module.css";
-import { NavbarContact, NavbarSelfAssessment } from "@/views/components/icons";
 
 const Closure = () => {
   return (
@@ -16,30 +15,22 @@ const Closure = () => {
         </div>
         <div className={styles.cards}>
           <article className={styles.card}>
-            <div className={styles.cardHeader}>
-              <div className={styles.iconContainer}>
-                <NavbarContact fill="#fff" height={36} width={36} />
-              </div>
-              <h3>Contact me</h3>
-            </div>
-            <p>
-              Reach out to discuss your situation, ask questions, or explore
-              whether therapy may be right for you.
-            </p>
-            <CTALink href="/contact" label="Get in touch" />
-          </article>
-          <article className={styles.card}>
-            <div className={`${styles.cardHeader}`}>
-              <div className={styles.iconContainer}>
-                <NavbarSelfAssessment fill="#fff" height={36} width={36} />
-              </div>
-              <h3>Self-assessment</h3>
-            </div>
-            <p>
-              Take a few minutes to reflect on your current emotional well-being
-              through a brief self-assessment questionnaire.
+            <span className={styles.cardLabel}>Self-Assessment</span>
+            <h3 className={styles.cardTitle}>Not sure where to begin?</h3>
+            <p className={styles.cardDescription}>
+              Complete a brief self-assessment to reflect on your current
+              challenges and identify areas where therapy may be helpful.
             </p>
             <CTALink href="/self-assessment" label="Start Self-Assessment" />
+          </article>
+          <article className={styles.card}>
+            <span className={styles.cardLabel}>Contact</span>
+            <h3 className={styles.cardTitle}>Ready to reach out?</h3>
+            <p className={styles.cardDescription}>
+              Get in touch to discuss your situation, ask questions and explore
+              which type of support may be the best fit for your needs.
+            </p>
+            <CTALink href="/contact" label="Get in touch" />
           </article>
         </div>
       </section>

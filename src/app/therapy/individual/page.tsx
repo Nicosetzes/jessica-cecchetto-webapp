@@ -33,7 +33,7 @@ export default function IndividualTherapy() {
               with life&apos;s challenges.
             </p>
           </div>
-          <Cards cards={CARDS} />
+          <Cards svgBackground="var(--color-secondary)" cards={CARDS} />
         </div>
       </section>
       <section className={`section ${styles.closingSection}`}>

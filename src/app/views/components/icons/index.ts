@@ -19,6 +19,7 @@ export { default as LifeChanges } from "./LifeChanges";
 export { default as Hamburger } from "./Hamburger";
 export { default as ImproveMood } from "./ImproveMood";
 export { default as IndividualizedSupport } from "./IndividualizedSupport";
+export { default as Loneliness } from "./Loneliness";
 export { default as MeaningfulConnections } from "./MeaningfulConnections";
 export { default as Migration } from "./Migration";
 export { default as MindsetShift } from "./MindsetShift";
