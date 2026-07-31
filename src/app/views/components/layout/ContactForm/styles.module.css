@@ -73,6 +73,10 @@
   line-height: 1.7;
 }
 
+.checkbox span a {
+  color: var(--color-primary);
+}
+
 .error {
   color: var(--color-error);
   font-size: 0.875rem;

@@ -9,7 +9,6 @@ type Goal = {
 type Group = {
   id: string;
   title: string;
-  subtitle: string;
   goals: Goal[];
 };
 

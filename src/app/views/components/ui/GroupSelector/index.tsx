@@ -45,8 +45,6 @@ const GroupSelector = ({ color = "#fff", groups }: GroupSelectorProps) => {
             ease: "easeOut",
           }}
         >
-          <h3>{selected.title}</h3>
-          <p>{selected.subtitle}</p>
           <ul className={styles.goalList}>
             {selected.goals.map(({ description, iconKey, title }) => {
               const Icon = iconKey ? ICONS[iconKey] : null;

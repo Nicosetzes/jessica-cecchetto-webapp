@@ -72,12 +72,30 @@
   border-radius: 28px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   max-width: 900px;
   padding: 2.5rem;
 }
 
-.approachCard p {
+.approachItem {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.approachItem svg {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.approachItem strong {
+  color: var(--color-text);
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.approachItem p {
   color: var(--color-text-light);
   line-height: 1.9;
 }

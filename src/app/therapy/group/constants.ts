@@ -109,8 +109,6 @@ export const GROUPS: Groups = [
       },
     ],
     id: "depression",
-    subtitle:
-      "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     title: "Depression",
   },
   {
@@ -153,8 +151,6 @@ export const GROUPS: Groups = [
       },
     ],
     id: "anxiety",
-    subtitle:
-      "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     title: "Anxiety",
   },
   {
@@ -209,8 +205,6 @@ export const GROUPS: Groups = [
       },
     ],
     id: "loneliness",
-    subtitle:
-      "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     title: "Loneliness",
   },
 ];

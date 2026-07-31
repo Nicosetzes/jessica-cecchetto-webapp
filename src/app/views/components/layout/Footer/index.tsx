@@ -79,13 +79,8 @@ const Footer = () => {
           <h3 className={styles.columnTitle}>Legal</h3>
           <ul className={styles.linkList}>
             <li>
-              <Link href={"#"} className={styles.link}>
+              <Link href={"/privacy-policy"} className={styles.link}>
                 Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link href={"#"} className={styles.link}>
-                About GDPR
               </Link>
             </li>
           </ul>

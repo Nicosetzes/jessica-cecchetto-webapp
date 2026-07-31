@@ -19,10 +19,9 @@ export default function GroupTherapy() {
           Share with others in a safe environment to better understand yourself
         </h1>
         <p className={styles.description}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugit
-          aut sunt porro dicta, animi neque delectus temporibus quis
-          reprehenderit mollitia sapiente vitae, obcaecati aperiam beatae
-          repellendus, facere tempore illum!
+          Group therapy provides a safe and supportive environment where
+          individuals can share their experiences, gain insights, and develop
+          coping strategies.
         </p>
       </section>
       <section className={`section ${styles.infoSection}`}>
@@ -86,9 +85,10 @@ export default function GroupTherapy() {
       </section>
       <section className={`section ${styles.benefitsSection}`}>
         <div className={styles.container}>
-          <span className={styles.eyebrow}>Why group therapy works?</span>
+          <span className={styles.eyebrow}>Why does it work?</span>
           <h2 className={styles.heading}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugit
+            Group therapy offers unique benefits that individual therapy cannot
+            provide
           </h2>
         </div>
         <Cards cards={BENEFITS} />

@@ -1,3 +1,4 @@
+import { Check } from "@/views/components/icons";
 import { Closure } from "@/views/components/layout";
 import Image from "next/image";
 import styles from "./styles.module.css";
@@ -35,22 +36,45 @@ export default function About() {
           </h2>
         </div>
         <div className={styles.approachCard}>
-          <p>
-            My approach is structured, collaborative, and active. I encourage
-            clients to participate fully in the therapeutic process, and our
-            work often includes practical tools, reflection exercises, and
-            between-session activities designed to support lasting change.
-          </p>
-          <p>
-            I work from an integrative and evidence-based perspective, primarily
-            using Cognitive Behavioral Therapy (CBT) and Systemic Therapy, with
-            additional training in Dialectical Behavior Therapy (DBT).
-          </p>
-          <p>
-            My practice is also informed by the Gender Affirmative Model (GAM)
-            and the Gender Minority Stress Model, providing a supportive and
-            affirming space for gender-diverse and LGBTQ+ individuals.
-          </p>
+          <div className={styles.approachItem}>
+            <Check size={24} />
+            <div>
+              <strong>Structured and collaborative</strong>
+              <p>
+                My approach is structured, collaborative, and active. I
+                encourage clients to participate fully in the therapeutic
+                process, and our work often includes practical tools, reflection
+                exercises, and between-session activities designed to support
+                lasting change.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.approachItem}>
+            <Check size={24} />
+            <div>
+              <strong>Evidence-based practice</strong>
+              <p>
+                I work from an integrative and evidence-based perspective,
+                primarily using Cognitive Behavioral Therapy (CBT) and Systemic
+                Therapy, with additional training in Dialectical Behavior
+                Therapy (DBT).
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.approachItem}>
+            <Check size={24} />
+            <div>
+              <strong>Gender-affirmative support</strong>
+              <p>
+                My practice is also informed by the Gender Affirmative Model
+                (GAM) and the Gender Minority Stress Model, providing a
+                supportive and affirming space for gender-diverse and LGBTQ+
+                individuals.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section className={`section ${styles.experienceSection}`}>
@@ -170,7 +194,10 @@ export default function About() {
           </article>
           <article className={styles.educationCard}>
             <h3>University Professor</h3>
-            <p>Flores University</p>
+            <p>
+              Business consulting for family businesses and small and
+              medium-sized enterprises (SMEs) at Flores University
+            </p>
             <span>Buenos Aires, Argentina</span>
           </article>
           <article className={styles.educationCard}>
