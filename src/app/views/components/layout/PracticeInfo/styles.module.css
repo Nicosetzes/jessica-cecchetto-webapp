@@ -40,6 +40,16 @@
   letter-spacing: -0.03em;
 }
 
+.highlightCard {
+  border: 2px solid var(--color-primary);
+}
+
+.cardDescription {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
 .note {
   color: var(--color-text-light);
   font-size: 0.95rem;
@@ -51,6 +61,12 @@
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -45,7 +45,6 @@ export default function GroupTherapy() {
               <SessionFee fill="currentColor" size={32} />
               <strong>700 DKK</strong>
               <span>Per session</span>
-              <div className={styles.discountInfo}></div>
             </article>
             <article className={styles.infoCard}>
               <SessionDiscount fill="currentColor" size={32} />

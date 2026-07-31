@@ -1,17 +1,12 @@
 import styles from "./styles.module.css";
 import {
+  SessionAppointment,
   SessionCancellation,
   SessionDuration,
   SessionFee,
 } from "@/views/components/icons";
 
-type PracticeInfoProps = {
-  duration: string;
-  price: string;
-  cancellation?: string;
-};
-
-const PracticeInfo = ({ duration, price, cancellation }: PracticeInfoProps) => {
+const PracticeInfo = () => {
   return (
     <section className={`section ${styles.section}`}>
       <div className={styles.grid}>
@@ -20,24 +15,32 @@ const PracticeInfo = ({ duration, price, cancellation }: PracticeInfoProps) => {
             <SessionDuration fill="var(--color-text)" size={24} />
             <span className={styles.label}>Session length</span>
           </div>
-          <strong>{duration}</strong>
+          <strong>60 minutes</strong>
         </article>
         <article className={styles.card}>
           <div className={styles.cardHeader}>
             <SessionFee fill="var(--color-text)" size={24} />
             <span className={styles.label}>Fee</span>
           </div>
-          <strong>{price}</strong>
+          <strong>1000 DKK per session</strong>
         </article>
-        {cancellation && (
-          <article className={styles.card}>
-            <div className={styles.cardHeader}>
-              <SessionCancellation fill="var(--color-text)" size={24} />
-              <span className={styles.label}>Cancellation</span>
-            </div>
-            <strong>{cancellation}</strong>
-          </article>
-        )}
+        <article className={styles.card}>
+          <div className={styles.cardHeader}>
+            <SessionCancellation fill="var(--color-text)" size={24} />
+            <span className={styles.label}>Cancellation</span>
+          </div>
+          <strong>24 hours notice required</strong>
+        </article>
+        <article className={`${styles.card} ${styles.highlightCard}`}>
+          <div className={styles.cardHeader}>
+            <SessionAppointment fill="var(--color-text)" size={24} />
+            <span className={styles.label}>First consultation</span>
+          </div>
+          <strong>600 DKK</strong>
+          <span className={styles.cardDescription}>
+            60-minute online session
+          </span>
+        </article>
       </div>
       <div className={styles.note}>
         <p>

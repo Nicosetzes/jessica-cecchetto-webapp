@@ -18,11 +18,7 @@ export default function IndividualTherapy() {
           matters most to you.
         </p>
       </section>
-      <PracticeInfo
-        duration="60 minutes"
-        price="1000 DKK per session"
-        cancellation="24 hours notice required"
-      />
+      <PracticeInfo />
       <section className={`section ${styles.specialtiesSection}`}>
         <div className={styles.content}>
           <div className={styles.textContent}>

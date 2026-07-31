@@ -17,11 +17,7 @@ export default function GenderAffirmingCounselling() {
           part of human experience.
         </p>
       </section>
-      <PracticeInfo
-        duration="60 minutes"
-        price="1000 DKK per session"
-        cancellation="24 hours notice required"
-      />
+      <PracticeInfo />
       <section className={`section ${styles.introSection}`}>
         <div className={styles.introCard}>
           <h2 className={styles.heading}>
