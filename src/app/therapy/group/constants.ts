@@ -32,11 +32,6 @@ export const BENEFITS: Cards = [
   },
   {
     description:
-      "Members can give and receive constructive, empathetic feedback.",
-    title: "Support and feedback",
-  },
-  {
-    description:
       "Being physically present with others promotes social connection and helps reduce digital dependence.",
     title: "In-person connection",
   },

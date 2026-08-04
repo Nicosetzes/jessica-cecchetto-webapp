@@ -24,7 +24,7 @@ export default function About() {
             preload
             alt="Psychotherapist portrait"
             className={styles.image}
-            src="/images/jesica-hero.jpg"
+            src="/images/jesica-02.jpg"
           />
         </div>
       </section>
@@ -49,7 +49,6 @@ export default function About() {
               </p>
             </div>
           </div>
-
           <div className={styles.approachItem}>
             <Check size={24} />
             <div>
@@ -62,7 +61,6 @@ export default function About() {
               </p>
             </div>
           </div>
-
           <div className={styles.approachItem}>
             <Check size={24} />
             <div>
@@ -74,6 +72,47 @@ export default function About() {
                 individuals.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className={`section ${styles.personalSection}`}>
+        <div className={styles.personalImage}>
+          <Image
+            fill
+            alt="Jesica"
+            className={styles.image}
+            src="/images/jesica-hero.jpg"
+          />
+        </div>
+        <div className={styles.personalContent}>
+          <span className={styles.eyebrow}>A bit more about me</span>
+          <h2 className={styles.personalTitle}>Beyond the therapy room</h2>
+          <div className={styles.personalText}>
+            <p>Welcome, I&apos;m Jesi, and I&apos;m 43 years old.</p>
+            <p>
+              Along with my psychotherapeutic work, I&apos;m a passionate
+              reader, especially drawn to books that touch the soul, leave a
+              lasting impression, and stay with us long after we finish the last
+              page. For this reason, it is very common for me to share
+              meaningful quotes from books during sessions or between sessions,
+              along with reflections that I believe may support my clients in
+              their personal journeys.
+            </p>
+            <p>
+              I also enjoy writing my own fiction stories, creating characters
+              and narratives that explore emotions, human experiences, and the
+              complexity of life.
+            </p>
+            <p>
+              I&apos;m proud to be part of the beautiful rainbow community, and
+              whenever I have the opportunity, I celebrate diversity, promote
+              inclusion, and share psychoeducation to foster greater
+              understanding.
+            </p>
+            <p>
+              I&apos;m happy to welcome you here and look forward to sharing
+              this space with you.
+            </p>
           </div>
         </div>
       </section>
@@ -108,7 +147,7 @@ export default function About() {
               fill
               alt="Therapy session"
               className={styles.image}
-              src="/images/jesica-02.jpg"
+              src="/images/jesica-04.jpg"
             />
           </article>
           <article className={styles.card}>

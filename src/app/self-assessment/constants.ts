@@ -8,27 +8,27 @@ export const LONELINESS_QUESTIONS = [2, 13, 14, 15, 16];
 
 export const PROFILE_CONTENT = {
   anxiety: {
-    title: "Anxious Profile",
+    title: "Result: Anxiety",
     description:
       "Based on your responses, it appears that you may be experiencing emotions commonly associated with anxiety. This result is only a general indication and is not a diagnosis.",
   },
   depression: {
-    title: "Depressive Profile",
+    title: "Result: Depression",
     description:
       "Based on your responses, it appears that you may be experiencing emotions commonly associated with depression. This result is only a general indication and is not a diagnosis.",
   },
   grief: {
-    title: "Grief Profile",
+    title: "Result: Grief",
     description:
       "Based on your responses, it appears that you may be experiencing emotions commonly associated with grief. This result is only a general indication and is not a diagnosis.",
   },
   loneliness: {
-    title: "Loneliness Profile",
+    title: "Result: Loneliness",
     description:
       "Based on your responses, it appears that you may be experiencing emotions commonly associated with loneliness. This result is only a general indication and is not a diagnosis.",
   },
   mixed: {
-    title: "Mixed Profile",
+    title: "Result: Mixed",
     description:
       "Your responses do not point strongly toward a single emotional profile. This may indicate the presence of several overlapping emotional experiences. This result is only a general indication and is not a diagnosis.",
   },

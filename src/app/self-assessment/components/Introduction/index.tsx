@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./styles.module.css";
 
 type IntroductionProps = {
@@ -10,12 +11,15 @@ const Introduction = ({ onStart }: IntroductionProps) => {
       <div className={styles.card}>
         <span className={styles.eyebrow}>Self Assessment</span>
         <h1 className={styles.title}>
-          Explore your current emotional well-being
+          Explore how you&apos;re feeling at the moment
         </h1>
         <p className={styles.description}>
-          This questionnaire is designed to help identify the emotions that may
-          be most present in your life right now and suggest which type of
-          therapeutic support could be most relevant for you.
+          This questionnaire helps identify the predominant emotions you are
+          experiencing right now. Emotions can be complex and varied, take your
+          time to answer thoughtfully.
+        </p>
+        <p className={styles.description}>
+          Only you will be able to see the results at the end.
         </p>
         <div className={styles.highlights}>
           <div className={styles.highlight}>
@@ -33,13 +37,15 @@ const Introduction = ({ onStart }: IntroductionProps) => {
         </div>
         <div className={styles.notice}>
           <p>
-            This questionnaire is intended for guidance only and does not
-            provide a clinical diagnosis.
+            This questionnaire is intended for guidance only and does{" "}
+            <strong>not</strong> provide a clinical diagnosis.
           </p>
           <p>
-            Before any group placement, an individual intake interview is
-            conducted to better understand your situation and ensure appropriate
-            guidance.
+            If you decide to start therapy after completing this questionnaire,
+            we can discuss together your results and I will help you identify
+            the type of therapeutic support that may be most beneficial, whether
+            that&apos;s a <Link href="/therapy/group">therapy group</Link> or{" "}
+            <Link href="/therapy/individual">individual therapy</Link>.
           </p>
         </div>
         <button type="button" className={styles.button} onClick={onStart}>

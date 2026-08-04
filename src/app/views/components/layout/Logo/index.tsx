@@ -5,10 +5,10 @@ const Logo = ({ dark = false }) => {
   return (
     <Link className={styles.logoLink} href="/">
       <span className={`${styles.logoName} ${dark ? styles.dark : ""}`}>
-        Jésica Cecchetto
+        Jesica Cecchetto
       </span>
       <span className={`${styles.logoSubtitle} ${dark ? styles.dark : ""}`}>
-        Psychotherapist
+        (she/her) Psychotherapist
       </span>
     </Link>
   );

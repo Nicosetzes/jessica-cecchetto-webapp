@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 import { BENEFITS, CARDS, GROUPS } from "./constants";
 import { Cards, Closure } from "@/views/components/layout";
 import {
+  SessionAppointment,
   SessionDiscount,
   SessionDuration,
   SessionFee,
@@ -32,6 +33,14 @@ export default function GroupTherapy() {
           </h2>
           <div className={styles.infoGrid}>
             <article className={styles.infoCard}>
+              <div>
+                <SessionAppointment fill="currentColor" size={32} />
+                <span className={styles.badge}>First consultation</span>
+              </div>
+              <strong>600 DKK</strong>
+              <span>60-minute online session</span>
+            </article>
+            <article className={styles.infoCard}>
               <SessionDuration fill="currentColor" size={32} />
               <strong>75 min</strong>
               <span>Session length</span>
@@ -46,7 +55,7 @@ export default function GroupTherapy() {
               <strong>700 DKK</strong>
               <span>Per session</span>
             </article>
-            <article className={styles.infoCard}>
+            <article className={`${styles.infoCard} ${styles.discountCard}`}>
               <SessionDiscount fill="currentColor" size={32} />
               <h3>Reduced rate available</h3>
               <span>

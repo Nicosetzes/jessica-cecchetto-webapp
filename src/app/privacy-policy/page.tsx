@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
       <section className={`section ${styles.contentSection}`}>
         <article className={styles.document}>
           <div className={styles.lastUpdated}>
-            <strong>Last updated:</strong> [Insert date]
+            <strong>Last updated:</strong> August 3rd, 2026
           </div>
           <h2>Privacy Policy (GDPR)</h2>
           <h3>1. Introduction</h3>
@@ -27,10 +27,11 @@ export default function PrivacyPolicyPage() {
           </p>
           <p>This website and my services are operated by:</p>
           <div className={styles.infoBox}>
-            <p>[Your full name]</p>
-            <p>[Professional title]</p>
-            <p>[Email address]</p>
-            <p>[Business address, if applicable]</p>
+            <p>Jesica Solange Cecchetto (she/her)</p>
+            <p>Psychotherapist</p>
+            <p>jesicacecchetto@gmail.com</p>
+            <p>Jens Kofoeds Gade 27 3.3</p>
+            <p>CVR: 43452630</p>
           </div>
           <p>
             I process personal data in accordance with the General Data
@@ -115,7 +116,7 @@ export default function PrivacyPolicyPage() {
           </ul>
           <p>To exercise your rights, please contact me at:</p>
           <div className={styles.infoBox}>
-            <p>[Your email]</p>
+            <p>jesicacecchetto@gmail.com</p>
           </div>
           <h3>9. Contact</h3>
           <p>
@@ -123,8 +124,9 @@ export default function PrivacyPolicyPage() {
             is handled, please contact:
           </p>
           <div className={styles.infoBox}>
-            <p>[Your name]</p>
-            <p>[Your email]</p>
+            <p>Jesica Solange Cecchetto (she/her)</p>
+            <p>jesicacecchetto@gmail.com</p>
+            <p>CVR: 43452630</p>
           </div>
           <h3>10. Complaints</h3>
           <p>
@@ -153,7 +155,7 @@ export default function PrivacyPolicyPage() {
           <hr className={styles.separator} />
           <h2>Cookie Policy</h2>
           <p>
-            <strong>Last updated:</strong> [Insert date]
+            <strong>Last updated:</strong> August 3rd, 2026
           </p>
           <h3>What Are Cookies?</h3>
           <p>
@@ -194,7 +196,7 @@ export default function PrivacyPolicyPage() {
           <h3>Contact</h3>
           <p>If you have questions about this Cookie Policy, please contact:</p>
           <div className={styles.infoBox}>
-            <p>[Your email]</p>
+            <p>jesicacecchetto@gmail.com</p>
           </div>
         </article>
       </section>

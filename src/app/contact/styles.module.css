@@ -79,6 +79,12 @@
   min-width: 0;
 }
 
+.contactMethodContent .container {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
 .contactMethodContent span {
   color: var(--color-text-light);
   font-size: 0.875rem;

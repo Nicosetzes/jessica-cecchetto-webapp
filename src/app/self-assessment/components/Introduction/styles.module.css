@@ -80,6 +80,14 @@
   line-height: 1.8;
 }
 
+.notice a {
+  color: var(--color-primary);
+}
+
+.notice strong {
+  text-decoration: underline;
+}
+
 .button {
   align-self: flex-start;
   background: var(--color-cta-background);

@@ -1,7 +1,6 @@
 import styles from "./styles.module.css";
 import {
   SessionAppointment,
-  SessionCancellation,
   SessionDuration,
   SessionFee,
 } from "@/views/components/icons";
@@ -10,36 +9,23 @@ const PracticeInfo = () => {
   return (
     <section className={`section ${styles.section}`}>
       <div className={styles.grid}>
-        <article className={styles.card}>
-          <div className={styles.cardHeader}>
-            <SessionDuration fill="var(--color-text)" size={24} />
-            <span className={styles.label}>Session length</span>
-          </div>
-          <strong>60 minutes</strong>
-        </article>
-        <article className={styles.card}>
-          <div className={styles.cardHeader}>
-            <SessionFee fill="var(--color-text)" size={24} />
-            <span className={styles.label}>Fee</span>
-          </div>
-          <strong>1000 DKK per session</strong>
-        </article>
-        <article className={styles.card}>
-          <div className={styles.cardHeader}>
-            <SessionCancellation fill="var(--color-text)" size={24} />
-            <span className={styles.label}>Cancellation</span>
-          </div>
-          <strong>24 hours notice required</strong>
-        </article>
         <article className={`${styles.card} ${styles.highlightCard}`}>
-          <div className={styles.cardHeader}>
-            <SessionAppointment fill="var(--color-text)" size={24} />
-            <span className={styles.label}>First consultation</span>
+          <div>
+            <SessionAppointment fill="currentColor" size={32} />
+            <span className={styles.badge}>First consultation</span>
           </div>
           <strong>600 DKK</strong>
-          <span className={styles.cardDescription}>
-            60-minute online session
-          </span>
+          <span>60-minute online session</span>
+        </article>
+        <article className={styles.card}>
+          <SessionDuration fill="currentColor" size={32} />
+          <strong>75 min</strong>
+          <span>Session length</span>
+        </article>
+        <article className={styles.card}>
+          <SessionFee fill="currentColor" size={32} />
+          <strong>700 DKK</strong>
+          <span>Per session</span>
         </article>
       </div>
       <div className={styles.note}>

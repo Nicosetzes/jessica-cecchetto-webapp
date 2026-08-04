@@ -52,8 +52,22 @@
   text-align: center;
 }
 
+.infoCard:first-of-type,
 .infoCard:last-of-type {
   border: 2px solid var(--color-primary);
+}
+
+.badge {
+  background: rgba(111, 143, 114, 0.12);
+  border: 1px solid rgba(111, 143, 114, 0.2);
+  border-radius: 999px;
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  min-width: 170px;
+  padding: 0.35rem 0.75rem;
+  text-transform: uppercase;
 }
 
 .infoCard svg {
@@ -209,13 +223,21 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .discountCard {
+    grid-column: span 2;
+  }
+
   .programmes {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .infoGrid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .discountCard {
+    grid-column: span 4;
   }
 }

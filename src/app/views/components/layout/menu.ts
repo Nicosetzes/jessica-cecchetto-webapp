@@ -16,7 +16,7 @@ export type MenuItem = {
 
 const MENU: Menu = [
   {
-    description: "Jésica Cecchetto - Home",
+    description: "Jesica Cecchetto (she/her) - Home",
     href: "/",
     iconKey: "NavbarHome",
     label: "Home",

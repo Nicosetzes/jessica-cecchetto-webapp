@@ -33,7 +33,6 @@ export { default as ResilienceGrowth } from "./ResilienceGrowth";
 export { default as SelfEsteem } from "./SelfEsteem";
 export { default as SelfRegulation } from "./SelfRegulation";
 export { default as SessionAppointment } from "./SessionAppointment";
-export { default as SessionCancellation } from "./SessionCancellation";
 export { default as SessionDiscount } from "./SessionDiscount";
 export { default as SessionDuration } from "./SessionDuration";
 export { default as SessionFee } from "./SessionFee";

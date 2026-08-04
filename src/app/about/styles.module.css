@@ -100,6 +100,41 @@
   line-height: 1.9;
 }
 
+.personalSection {
+  gap: 3rem;
+}
+
+.personalImage {
+  aspect-ratio: 4 / 5;
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.personalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.personalTitle {
+  color: var(--color-text);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+.personalText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.personalText p {
+  color: var(--color-text-light);
+  line-height: 1.9;
+}
+
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -278,6 +313,13 @@
 }
 
 @media (min-width: 768px) {
+  .personalSection {
+    align-items: center;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
   .grid {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 220px;

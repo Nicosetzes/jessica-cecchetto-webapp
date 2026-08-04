@@ -3,8 +3,8 @@
 import { QUESTIONS } from "./constants";
 import type { SelfAssessmentAnswers } from "@/types";
 import { calculateAssessmentResult } from "@/utils";
-import { useState } from "react";
 import { Introduction, ProgressBar, Result, Step } from "./components";
+import { useEffect, useState } from "react";
 
 export default function SelfAssessment() {
   const [answers, setAnswers] = useState<SelfAssessmentAnswers>({});
@@ -13,6 +13,15 @@ export default function SelfAssessment() {
 
   const currentQuestionData = QUESTIONS[currentQuestion];
   const isFinished = currentQuestion === QUESTIONS.length;
+
+  useEffect(() => {
+    if (started) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  }, [started, currentQuestion]);
 
   const handleAnswer = (value: boolean): void => {
     const questionId = QUESTIONS[currentQuestion].id;
@@ -38,9 +47,6 @@ export default function SelfAssessment() {
   if (isFinished) {
     return <Result result={calculateAssessmentResult(answers)} />;
   }
-
-  console.log("Current Question:", currentQuestionData);
-  console.log("Answers:", answers);
 
   return (
     <section className="section">

@@ -24,14 +24,6 @@ export default function Home() {
             <CTALink href="/contact" label="Contact me" variant="secondary" />
           </div>
         </div>
-        <div className={styles.heroImage}>
-          <Image
-            fill
-            src="/images/jesica-hero.jpg"
-            alt="Psychotherapist"
-            className={styles.image}
-          />
-        </div>
       </section>
       <section className={`section ${styles.supportSection}`}>
         <div className={styles.sectionHeader}>
@@ -49,7 +41,7 @@ export default function Home() {
         <div className={styles.sectionHeader}>
           <span className={styles.eyebrow}>Therapy options</span>
           <h2 className={styles.heading}>
-            Find the format that best suits your needs
+            Find the option that best suits your needs
           </h2>
           <p className={styles.description}>
             Whether you prefer individual support or the shared experience of a

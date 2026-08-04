@@ -21,6 +21,7 @@ const Footer = () => {
               >
                 +45 55 24 80 22
               </a>
+              <span>(messages only)</span>
             </div>
             <div>
               <NavbarContact fill={"#fff"} height={24} width={24} />
@@ -88,7 +89,7 @@ const Footer = () => {
       </div>
       <div className={styles.bottom}>
         <p className={styles.copy}>
-          &copy; {year} Jésica Cecchetto · All rights reserved.
+          &copy; {year} Jesica Cecchetto (she/her) · All rights reserved.
         </p>
         <p className={styles.copy}>
           Designed and developed by{" "}

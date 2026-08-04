@@ -45,13 +45,16 @@ export default function Contact() {
             </div>
             <div className={styles.contactMethodContent}>
               <span>WhatsApp</span>
-              <a
-                href="https://wa.me/4555248022"
-                target="_blank"
-                rel="noreferrer"
-              >
-                +45 55 24 80 22 (messages only)
-              </a>
+              <div className={styles.container}>
+                <a
+                  href="https://wa.me/4555248022"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  +45 55 24 80 22
+                </a>
+                <span>(messages only)</span>
+              </div>
             </div>
           </div>
         </div>

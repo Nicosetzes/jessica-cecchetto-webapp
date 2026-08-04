@@ -18,20 +18,6 @@ export default function GenderAffirmingCounselling() {
         </p>
       </section>
       <PracticeInfo />
-      <section className={`section ${styles.introSection}`}>
-        <div className={styles.introCard}>
-          <h2 className={styles.heading}>
-            An affirming and strengths-based approach
-          </h2>
-          <p className={styles.paragraph}>
-            Informed by the Gender Affirmative Model (GAM) and the Gender
-            Minority Stress Model, I provide a supportive, respectful, and
-            affirming space where gender-diverse and LGBTQ+ individuals can
-            explore their experiences, strengthen resilience, and move toward
-            greater well-being while feeling seen, understood, and accepted.
-          </p>
-        </div>
-      </section>
       <section className={`section ${styles.approachSection}`}>
         <div className={styles.content}>
           <div className={styles.sectionHeader}>
