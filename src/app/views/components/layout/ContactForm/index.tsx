@@ -3,6 +3,7 @@
 import Link from "next/link";
 import styles from "./styles.module.css";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { type ContactFormValues, contactFormSchema } from "./schema";
 
@@ -10,7 +11,7 @@ const ContactForm = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting, isSubmitSuccessful },
+    formState: { errors, isSubmitting },
     reset,
   } = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
@@ -24,19 +25,32 @@ const ContactForm = () => {
     },
   });
 
+  const [submitError, setSubmitError] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+
   const onSubmit = async (data: ContactFormValues) => {
-    console.log(data);
+    setSubmitError(false);
+    setSubmitSuccess(false);
 
-    /**
-     * FUTURE:
-     *
-     * await fetch("/api/contact", {
-     *   method: "POST",
-     *   body: JSON.stringify(data),
-     * });
-     */
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    reset();
+      if (!response.ok) {
+        throw new Error("Failed to send");
+      }
+
+      reset();
+      setSubmitSuccess(true);
+    } catch (error) {
+      console.error(error);
+      setSubmitError(true);
+    }
   };
 
   return (
@@ -108,9 +122,14 @@ const ContactForm = () => {
       >
         {isSubmitting ? "Sending..." : "Send message"}
       </button>
-      {isSubmitSuccessful && (
+      {submitSuccess && (
         <p className={styles.success}>
           Your message has been submitted successfully.
+        </p>
+      )}
+      {submitError && (
+        <p className={styles.error}>
+          Something went wrong. Please try again later.
         </p>
       )}
     </form>

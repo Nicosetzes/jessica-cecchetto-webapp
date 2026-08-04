@@ -1,6 +1,7 @@
 export { default as Cards } from "./Cards";
 export { default as Closure } from "./Closure";
 export { default as ContactForm } from "./ContactForm";
+export { default as EmailTemplate } from "./EmailTemplate";
 export { default as Footer } from "./Footer";
 export { default as GridCards } from "./GridCards";
 export { default as Logo } from "./Logo";
