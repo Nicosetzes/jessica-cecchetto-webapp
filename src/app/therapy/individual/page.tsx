@@ -1,6 +1,11 @@
 import { CARDS } from "./constants";
 import styles from "./styles.module.css";
-import { Cards, Closure, PracticeInfo } from "@/views/components/layout";
+import {
+  Cards,
+  Closure,
+  PracticeInfo,
+  SelfAssessmentToast,
+} from "@/views/components/layout";
 
 export default function IndividualTherapy() {
   return (
@@ -46,6 +51,7 @@ export default function IndividualTherapy() {
         </div>
       </section>
       <Closure />
+      <SelfAssessmentToast />
     </>
   );
 }

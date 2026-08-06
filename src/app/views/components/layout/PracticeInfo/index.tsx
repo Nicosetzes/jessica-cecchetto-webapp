@@ -19,12 +19,12 @@ const PracticeInfo = () => {
         </article>
         <article className={styles.card}>
           <SessionDuration fill="currentColor" size={32} />
-          <strong>75 min</strong>
+          <strong>60 min</strong>
           <span>Session length</span>
         </article>
         <article className={styles.card}>
           <SessionFee fill="currentColor" size={32} />
-          <strong>700 DKK</strong>
+          <strong>1000 DKK</strong>
           <span>Per session</span>
         </article>
       </div>

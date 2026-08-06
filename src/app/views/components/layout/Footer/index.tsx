@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Logo } from "@/views/components/layout";
 import styles from "./styles.module.css";
-import { NavbarContact, Whatsapp } from "@/views/components/icons";
+import { CVR, NavbarContact, Whatsapp } from "@/views/components/icons";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -11,7 +11,11 @@ const Footer = () => {
       <div className={styles.inner}>
         <div className={styles.brand}>
           <Logo dark />
-          <div className={styles.socialLinks}>
+          <div className={styles.footerInfo}>
+            <div>
+              <CVR fill={"#fff"} height={24} width={24} />
+              <span>CVR: 43452630</span>
+            </div>
             <div>
               <Whatsapp fill={"#fff"} height={24} width={24} />
               <a

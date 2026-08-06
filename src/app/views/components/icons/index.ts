@@ -7,6 +7,7 @@ export { default as Communication } from "./Communication";
 export { default as Connection } from "./Connection";
 export { default as CopingStrategies } from "./CopingStrategies";
 export { default as Cross } from "./Cross";
+export { default as CVR } from "./CVR";
 export { default as Depression } from "./Depression";
 export { default as EmotionalAwareness } from "./EmotionalAwareness";
 export { default as EmotionalExpression } from "./EmotionalExpression";

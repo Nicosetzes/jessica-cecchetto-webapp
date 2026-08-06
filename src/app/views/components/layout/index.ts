@@ -10,3 +10,4 @@ export { default as PageLoader } from "./PageLoader";
 export { default as PageWrapper } from "./PageWrapper";
 export { default as PracticeInfo } from "./PracticeInfo";
 export { default as PresentationCards } from "./PresentationCards";
+export { default as SelfAssessmentToast } from "./SelfAssessmentToast";

@@ -1,34 +1,34 @@
-export const ANXIETY_QUESTIONS = [6, 7, 8, 18, 19, 21];
+export const ANXIETY_QUESTIONS = [1, 5, 9, 14, 18];
 
-export const DEPRESSION_QUESTIONS = [1, 4, 5, 17];
+export const DEPRESSION_QUESTIONS = [3, 7, 11, 17, 20];
 
-export const GRIEF_QUESTIONS = [9, 10, 11, 12];
+export const GRIEF_QUESTIONS = [2, 6, 10, 13, 16];
 
-export const LONELINESS_QUESTIONS = [2, 13, 14, 15, 16];
+export const LONELINESS_QUESTIONS = [4, 8, 12, 15, 19];
 
 export const PROFILE_CONTENT = {
   anxiety: {
-    title: "Result: Anxiety",
+    title: "Feelings of Anxiety",
     description:
       "Based on your responses, it appears that you may be experiencing emotions commonly associated with anxiety. This result is only a general indication and is not a diagnosis.",
   },
   depression: {
-    title: "Result: Depression",
+    title: "Feelings of Depression",
     description:
       "Based on your responses, it appears that you may be experiencing emotions commonly associated with depression. This result is only a general indication and is not a diagnosis.",
   },
   grief: {
-    title: "Result: Grief",
+    title: "Feelings of Grief",
     description:
       "Based on your responses, it appears that you may be experiencing emotions commonly associated with grief. This result is only a general indication and is not a diagnosis.",
   },
   loneliness: {
-    title: "Result: Loneliness",
+    title: "Feelings of Loneliness",
     description:
       "Based on your responses, it appears that you may be experiencing emotions commonly associated with loneliness. This result is only a general indication and is not a diagnosis.",
   },
   mixed: {
-    title: "Result: Mixed",
+    title: "Mixed Feelings",
     description:
       "Your responses do not point strongly toward a single emotional profile. This may indicate the presence of several overlapping emotional experiences. This result is only a general indication and is not a diagnosis.",
   },
@@ -37,83 +37,82 @@ export const PROFILE_CONTENT = {
 export const QUESTIONS = [
   {
     id: 1,
-    text: "Do you feel that your life has little or no meaning or purpose?",
-  },
-  {
-    id: 2,
-    text: "Do you spend a lot of time anticipating that something negative might happen?",
-  },
-  {
-    id: 3,
-    text: "Is your distress clearly related to the loss of a person, relationship, role, or stage of life?",
-  },
-  {
-    id: 4,
-    text: "Do you feel a persistent sense of emotional emptiness?",
-  },
-  {
-    id: 5,
     text: "Do you find it difficult to relax because you feel tense or on edge?",
   },
   {
-    id: 6,
-    text: "Do you feel that nothing you do can improve your future situation?",
+    id: 2,
+    text: "Do you often experience a strong longing for someone or something you have lost?",
   },
   {
-    id: 7,
-    text: "Does your emotional pain come in waves, triggered by memories or specific situations?",
+    id: 3,
+    text: "Do you feel that your life has little or no meaning or purpose?",
   },
   {
-    id: 8,
+    id: 4,
     text: "Do you feel that no one truly sees, understands, or is emotionally available to you?",
   },
   {
-    id: 9,
-    text: "When what you worry about is resolved, does your distress decrease significantly?",
+    id: 5,
+    text: "Do you spend a lot of time anticipating that something negative might happen?",
   },
   {
-    id: 10,
-    text: "Do you feel that your efforts are not worthwhile, even in areas that matter to you?",
-  },
-  {
-    id: 11,
-    text: "Does your distress intensify when you are alone or feel distant from others?",
-  },
-  {
-    id: 12,
-    text: "Do you feel that something important is missing in your life in an irreversible way?",
-  },
-  {
-    id: 13,
-    text: "Do you feel emotionally disconnected from others, even when you are with people?",
-  },
-  {
-    id: 14,
-    text: "Do you experience frequent emotional distress that feels difficult to understand or manage?",
-  },
-  {
-    id: 15,
+    id: 6,
     text: "Does your distress intensify when you think about someone or something you have lost?",
   },
   {
-    id: 16,
+    id: 7,
+    text: "Do you feel emotionally numb or empty most of the time?",
+  },
+  {
+    id: 8,
     text: "Do you desire closeness or connection but feel unable to achieve it?",
   },
   {
-    id: 17,
-    text: "Do you feel that your emotional state remains mostly the same regardless of what is happening around you?",
+    id: 9,
+    text: "Do you experience sudden episodes of intense fear or panic that feel overwhelming or difficult to control?",
   },
-  { id: 18, text: "Would you say your predominant emotion is fear?" },
+  {
+    id: 10,
+    text: "Is your distress clearly related to the loss of a person, relationship, role, or stage of life?",
+  },
+  {
+    id: 11,
+    text: "Do you feel that nothing you do can improve your future situation?",
+  },
+  {
+    id: 12,
+    text: "When you are with other people, does your distress improve significantly?",
+  },
+  {
+    id: 13,
+    text: "Does your emotional pain come in waves, triggered by memories or specific situations?",
+  },
+  {
+    id: 14,
+    text: "Would you say your predominant emotion is fear?",
+  },
+  {
+    id: 15,
+    text: "Do you feel emotionally disconnected from others, even when you are with people?",
+  },
+  {
+    id: 16,
+    text: "Do you feel that something important is missing from your life in an irreversible way?",
+  },
+  {
+    id: 17,
+    text: "Does your mood remain low even when positive things happen?",
+  },
+  {
+    id: 18,
+    text: "When what you're worried about is resolved, does your distress decrease significantly?",
+  },
   {
     id: 19,
-    text: "Is your distress more related to something that might happen, than to something that has already happened?",
+    text: "Does your distress intensify when you are alone or feel distant from others?",
   },
   {
     id: 20,
-    text: "When you are with others, does your distress improve significantly?",
-  },
-  {
-    id: 21,
-    text: "Have you ever experienced a sudden episode of intense fear or discomfort that peaked within minutes, possibly accompanied by physical symptoms such as heart racing, shortness of breath, dizziness, trembling, or a feeling of losing control (panic attack)?",
+    text: "Do you feel that your efforts are not worthwhile, even in areas that matter to you?",
   },
 ];

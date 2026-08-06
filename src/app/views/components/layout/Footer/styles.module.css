@@ -20,16 +20,15 @@
   gap: 1rem;
 }
 
-.socialLinks {
-  color: var(--color-card-background);
+.footerInfo {
   display: flex;
   flex-direction: column;
   font-size: 0.9rem;
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
-.socialLinks > div {
+.footerInfo > div {
   align-items: center;
   display: flex;
   gap: 0.5rem;
