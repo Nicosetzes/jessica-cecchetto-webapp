@@ -64,7 +64,7 @@ export default function About() {
         </div>
       </section>
       <section className={`section ${styles.approachSection}`}>
-        <div className={styles.sectionHeader}>
+        <div className={styles.approachHeader}>
           <span className={styles.eyebrow}>My approach</span>
           <h2>
             Therapy that combines reflection, practical tools and collaboration
@@ -111,7 +111,7 @@ export default function About() {
         </div>
       </section>
       <section className={`section ${styles.experienceSection}`}>
-        <div className={styles.sectionHeader}>
+        <div className={styles.experienceHeader}>
           <span className={styles.eyebrow}>Experience</span>
           <h2>Areas I commonly work with</h2>
         </div>
@@ -215,7 +215,7 @@ export default function About() {
         </div>
       </section>
       <section className={`section ${styles.educationSection}`}>
-        <div className={styles.sectionHeader}>
+        <div className={styles.educationHeader}>
           <span className={styles.eyebrow}>Education</span>
           <h2>Education & Professional Training</h2>
         </div>
