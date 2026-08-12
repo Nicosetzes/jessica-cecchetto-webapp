@@ -9,22 +9,19 @@ export default function About() {
       <section className={`section ${styles.hero}`}>
         <div className={styles.heroContent}>
           <span className={styles.eyebrow}>About</span>
-          <h1 className={styles.title}>
-            A collaborative and evidence-based approach to therapy
-          </h1>
+          <h1 className={styles.title}>Beyond the therapy room</h1>
           <p className={styles.description}>
-            I provide a supportive, structured, and active therapeutic
-            environment where clients can better understand themselves, develop
-            practical skills, and work toward meaningful and lasting change.
+            Welcome, I&apos;m Jesi, and I&apos;m 43 years old. I&apos;m happy to
+            welcome you here and look forward to sharing this space with you.
           </p>
         </div>
         <div className={styles.imageWrapper}>
           <Image
             fill
             preload
-            alt="Psychotherapist portrait"
+            alt="Jesica"
             className={styles.image}
-            src="/images/jesica-02.jpg"
+            src="/images/jesica-hero.jpg"
           />
         </div>
       </section>
@@ -34,14 +31,15 @@ export default function About() {
             fill
             alt="Jesica"
             className={styles.image}
-            src="/images/jesica-hero.jpg"
+            src="/images/jesica-02.jpg"
           />
         </div>
         <div className={styles.personalContent}>
           <span className={styles.eyebrow}>A bit more about me</span>
-          <h2 className={styles.personalTitle}>Beyond the therapy room</h2>
+          <h2 className={styles.personalTitle}>
+            Books, stories and human experiences
+          </h2>
           <div className={styles.personalText}>
-            <p>Welcome, I&apos;m Jesi, and I&apos;m 43 years old.</p>
             <p>
               Along with my psychotherapeutic work, I&apos;m a passionate
               reader, especially drawn to books that touch the soul, leave a
@@ -61,10 +59,6 @@ export default function About() {
               whenever I have the opportunity, I celebrate diversity, promote
               inclusion, and share psychoeducation to foster greater
               understanding.
-            </p>
-            <p>
-              I&apos;m happy to welcome you here and look forward to sharing
-              this space with you.
             </p>
           </div>
         </div>
