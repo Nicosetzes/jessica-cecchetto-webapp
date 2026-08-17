@@ -11,8 +11,28 @@ export default function About() {
           <span className={styles.eyebrow}>About</span>
           <h1 className={styles.title}>Beyond the therapy room</h1>
           <p className={styles.description}>
-            Welcome, I&apos;m Jesi, and I&apos;m 43 years old. I&apos;m happy to
+            Hi, I&apos;m Jesi, and I&apos;m 43 years old. I&apos;m happy to
             welcome you here and look forward to sharing this space with you.
+          </p>
+          <p className={styles.description}>
+            Along with my psychotherapeutic work, I&apos;m a passionate reader,
+            especially drawn to books that touch the soul, leave a lasting
+            impression, and stay with us long after we finish the last page. For
+            this reason, it is very common for me to share meaningful quotes
+            from books during sessions or between sessions, along with
+            reflections that I believe may support my clients in their personal
+            journeys.
+          </p>
+          <p className={styles.description}>
+            I also enjoy writing my own fiction stories, creating characters and
+            narratives that explore emotions, human experiences, and the
+            complexity of life.
+          </p>
+          <p className={styles.description}>
+            I&apos;m proud to be part of the beautiful rainbow community, and
+            whenever I have the opportunity, I celebrate diversity, promote
+            inclusion, and share psychoeducation to foster greater
+            understanding.
           </p>
         </div>
         <div className={styles.imageWrapper}>
@@ -23,44 +43,6 @@ export default function About() {
             className={styles.image}
             src="/images/jesica-hero.jpg"
           />
-        </div>
-      </section>
-      <section className={`section ${styles.personalSection}`}>
-        <div className={styles.personalImage}>
-          <Image
-            fill
-            alt="Jesica"
-            className={styles.image}
-            src="/images/jesica-02.jpg"
-          />
-        </div>
-        <div className={styles.personalContent}>
-          <span className={styles.eyebrow}>A bit more about me</span>
-          <h2 className={styles.personalTitle}>
-            Books, stories and human experiences
-          </h2>
-          <div className={styles.personalText}>
-            <p>
-              Along with my psychotherapeutic work, I&apos;m a passionate
-              reader, especially drawn to books that touch the soul, leave a
-              lasting impression, and stay with us long after we finish the last
-              page. For this reason, it is very common for me to share
-              meaningful quotes from books during sessions or between sessions,
-              along with reflections that I believe may support my clients in
-              their personal journeys.
-            </p>
-            <p>
-              I also enjoy writing my own fiction stories, creating characters
-              and narratives that explore emotions, human experiences, and the
-              complexity of life.
-            </p>
-            <p>
-              I&apos;m proud to be part of the beautiful rainbow community, and
-              whenever I have the opportunity, I celebrate diversity, promote
-              inclusion, and share psychoeducation to foster greater
-              understanding.
-            </p>
-          </div>
         </div>
       </section>
       <section className={`section ${styles.approachSection}`}>

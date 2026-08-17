@@ -36,7 +36,7 @@ export default function Contact() {
             </div>
             <ClipboardButton
               ariaLabel="Copy email address to clipboard"
-              textToCopy="jessicacecchetto@gmail.com"
+              textToCopy="jesicacecchetto@gmail.com"
             />
           </div>
           <div className={styles.contactMethod}>
