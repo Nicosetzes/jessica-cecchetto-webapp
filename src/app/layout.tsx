@@ -16,6 +16,17 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   description:
     "Evidence-based psychotherapy in Copenhagen, including individual therapy, group therapy and gender-affirming counselling.",
+  icons: {
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
+  manifest: "/site.webmanifest",
   metadataBase: new URL("https://www.therapywithjesica.dk"),
   openGraph: {
     description:
