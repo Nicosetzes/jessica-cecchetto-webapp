@@ -58,7 +58,7 @@ export default function About() {
             <Image
               fill
               preload
-              alt="Jesica Cecchetto, psychologist and psychotherapist"
+              alt="Jesica Cecchetto, psychotherapist"
               className={styles.image}
               src="/images/jesica-hero.jpg"
             />
@@ -66,7 +66,7 @@ export default function About() {
           <div className={styles.imageCaption}>
             <strong>Jesica Cecchetto</strong>
             <span>-</span>
-            <span>Psychologist &amp; Psychotherapist</span>
+            <span>Psychotherapist</span>
           </div>
         </div>
       </section>
