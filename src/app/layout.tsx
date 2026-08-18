@@ -4,6 +4,7 @@ import { CookieProvider } from "@/context";
 import { Manrope } from "next/font/google";
 import type { Metadata } from "next";
 import { PageWrapper } from "@/views/components/layout";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AnalyticsWrapper, Footer, Navbar } from "@/views/components/layout";
 
 const manrope = Manrope({
@@ -64,6 +65,7 @@ export default function RootLayout({
           <CookieBanner />
           <AnalyticsWrapper />
         </CookieProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
