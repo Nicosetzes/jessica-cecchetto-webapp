@@ -1,9 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import { Logo } from "@/views/components/layout";
 import styles from "./styles.module.css";
+import { useCookieConsent } from "@/context";
 import { CVR, NavbarContact, Whatsapp } from "@/views/components/icons";
 
 const Footer = () => {
+  const { openBanner } = useCookieConsent();
+
   const year = new Date().getFullYear();
 
   return (
@@ -87,6 +92,11 @@ const Footer = () => {
               <Link href={"/privacy-policy"} className={styles.link}>
                 Privacy Policy
               </Link>
+            </li>
+            <li>
+              <button onClick={openBanner} className={styles.cookiesButton}>
+                Cookie Settings
+              </button>
             </li>
           </ul>
         </div>

@@ -2,14 +2,20 @@
 
 import { CTALink } from "../../ui";
 import styles from "./styles.module.css";
+import { useCookieConsent } from "@/context";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const SelfAssessmentToast = () => {
+  const { isLoading, isResolved } = useCookieConsent();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if (sessionStorage.getItem("assessment-toast-dismissed")) {
+    if (
+      isLoading ||
+      !isResolved ||
+      sessionStorage.getItem("assessment-toast-dismissed")
+    ) {
       return;
     }
 
@@ -18,7 +24,7 @@ const SelfAssessmentToast = () => {
     }, 5000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [isResolved, isLoading]);
 
   const closeToast = () => {
     sessionStorage.setItem("assessment-toast-dismissed", "true");
@@ -26,6 +32,8 @@ const SelfAssessmentToast = () => {
   };
 
   useEffect(() => {
+    if (!visible) return;
+
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         closeToast();
@@ -33,36 +41,18 @@ const SelfAssessmentToast = () => {
     };
 
     window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, []);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [visible]);
 
   return (
     <AnimatePresence>
       {visible && (
         <motion.aside
+          animate={{ opacity: 1, y: 0, scale: 1 }}
           className={styles.card}
-          initial={{
-            opacity: 0,
-            y: 40,
-            scale: 0.98,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-            scale: 1,
-          }}
-          exit={{
-            opacity: 0,
-            y: 40,
-            scale: 0.98,
-          }}
-          transition={{
-            duration: 0.35,
-            ease: "easeOut",
-          }}
+          exit={{ opacity: 0, y: 40, scale: 0.98 }}
+          initial={{ opacity: 0, y: 40, scale: 0.98 }}
+          transition={{ duration: 0.35, ease: "easeOut" }}
         >
           <button
             aria-label="Close"

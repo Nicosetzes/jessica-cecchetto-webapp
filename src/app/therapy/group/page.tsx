@@ -1,9 +1,10 @@
 import { GroupSelector } from "@/views/components/ui";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { SelfAssessmentToast } from "@/views/components/ui";
 import styles from "./styles.module.css";
 import { BENEFITS, CARDS, GROUPS } from "./constants";
-import { Cards, Closure, SelfAssessmentToast } from "@/views/components/layout";
+import { Cards, Closure } from "@/views/components/layout";
 import {
   SessionAppointment,
   SessionDiscount,

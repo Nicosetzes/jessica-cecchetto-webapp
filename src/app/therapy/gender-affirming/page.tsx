@@ -1,12 +1,8 @@
 import { GENDER_AFFIRMING_CARDS } from "./constants";
 import type { Metadata } from "next";
+import { SelfAssessmentToast } from "@/views/components/ui";
 import styles from "./styles.module.css";
-import {
-  Closure,
-  GridCards,
-  PracticeInfo,
-  SelfAssessmentToast,
-} from "@/views/components/layout";
+import { Closure, GridCards, PracticeInfo } from "@/views/components/layout";
 
 export const metadata: Metadata = {
   alternates: {

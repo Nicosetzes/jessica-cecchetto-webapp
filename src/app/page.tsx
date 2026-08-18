@@ -1,14 +1,10 @@
 import { CTALink } from "./views/components/ui";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { SelfAssessmentToast } from "@/views/components/ui";
 import styles from "./styles.module.css";
 import { CARDS, PRESENTATION_CARDS } from "./constants";
-import {
-  Cards,
-  Closure,
-  PresentationCards,
-  SelfAssessmentToast,
-} from "@/views/components/layout";
+import { Cards, Closure, PresentationCards } from "@/views/components/layout";
 
 export const metadata: Metadata = {
   title: "Psychotherapy in Copenhagen | Jesica Cecchetto",

@@ -1,12 +1,8 @@
 import { CARDS } from "./constants";
 import type { Metadata } from "next";
+import { SelfAssessmentToast } from "@/views/components/ui";
 import styles from "./styles.module.css";
-import {
-  Cards,
-  Closure,
-  PracticeInfo,
-  SelfAssessmentToast,
-} from "@/views/components/layout";
+import { Cards, Closure, PracticeInfo } from "@/views/components/layout";
 
 export const metadata: Metadata = {
   alternates: {

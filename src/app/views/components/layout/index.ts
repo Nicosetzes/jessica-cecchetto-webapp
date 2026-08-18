@@ -1,3 +1,4 @@
+export { default as AnalyticsWrapper } from "./AnalyticsWrapper";
 export { default as Cards } from "./Cards";
 export { default as Closure } from "./Closure";
 export { default as ContactForm } from "./ContactForm";
@@ -10,4 +11,3 @@ export { default as PageLoader } from "./PageLoader";
 export { default as PageWrapper } from "./PageWrapper";
 export { default as PracticeInfo } from "./PracticeInfo";
 export { default as PresentationCards } from "./PresentationCards";
-export { default as SelfAssessmentToast } from "./SelfAssessmentToast";

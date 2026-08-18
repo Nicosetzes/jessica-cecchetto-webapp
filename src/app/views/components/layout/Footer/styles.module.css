@@ -67,6 +67,20 @@
   color: #ffffff;
 }
 
+.cookiesButton {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.cookiesButton:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;

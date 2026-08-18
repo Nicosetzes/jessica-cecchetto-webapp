@@ -1,8 +1,9 @@
 import { Check } from "@/views/components/icons";
+import { Closure } from "@/views/components/layout";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { SelfAssessmentToast } from "@/views/components/ui";
 import styles from "./styles.module.css";
-import { Closure, SelfAssessmentToast } from "@/views/components/layout";
 
 export const metadata: Metadata = {
   alternates: {

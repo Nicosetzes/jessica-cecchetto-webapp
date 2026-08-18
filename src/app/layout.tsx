@@ -1,8 +1,10 @@
 import "./globals.css";
+import { CookieBanner } from "@/views/components/ui";
+import { CookieProvider } from "@/context";
 import { Manrope } from "next/font/google";
 import type { Metadata } from "next";
-import PageWrapper from "@/views/components/layout/PageWrapper";
-import { Footer, Navbar } from "@/views/components/layout";
+import { PageWrapper } from "@/views/components/layout";
+import { AnalyticsWrapper, Footer, Navbar } from "@/views/components/layout";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -55,9 +57,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${manrope.variable}`}>
       <body>
-        <Navbar />
-        <PageWrapper>{children}</PageWrapper>
-        <Footer />
+        <CookieProvider>
+          <Navbar />
+          <PageWrapper>{children}</PageWrapper>
+          <Footer />
+          <CookieBanner />
+          <AnalyticsWrapper />
+        </CookieProvider>
       </body>
     </html>
   );
