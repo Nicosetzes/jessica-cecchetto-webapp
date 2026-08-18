@@ -21,8 +21,8 @@ export async function POST(request: Request) {
     const parsedReason = reasonMap[reason] ?? reason;
 
     const result = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "nicosetzes@gmail.com",
+      from: "Jesica Cecchetto Therapy <contact@therapywithjesica.dk>",
+      to: "jesicacecchetto@gmail.com",
       subject: `New contact form submission - ${parsedReason}`,
       replyTo: email,
       react: React.createElement(EmailTemplate, {
