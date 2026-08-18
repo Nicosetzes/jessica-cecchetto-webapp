@@ -1,4 +1,18 @@
+import { Metadata } from "next";
 import styles from "./styles.module.css";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+  description:
+    "Privacy policy for Jesica Cecchetto's psychotherapy practice and website.",
+  robots: {
+    follow: true,
+    index: false,
+  },
+  title: "Privacy Policy",
+};
 
 export default function PrivacyPolicyPage() {
   return (

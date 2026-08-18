@@ -1,5 +1,6 @@
 import { GroupSelector } from "@/views/components/ui";
 import Link from "next/link";
+import type { Metadata } from "next";
 import styles from "./styles.module.css";
 import { BENEFITS, CARDS, GROUPS } from "./constants";
 import { Cards, Closure, SelfAssessmentToast } from "@/views/components/layout";
@@ -10,6 +11,22 @@ import {
   SessionFee,
   SessionGroupSize,
 } from "@/views/components/icons";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/therapy/group",
+  },
+  description:
+    "Small group therapy programmes in Copenhagen for adults, with a maximum of four participants. Explore support for depression, anxiety and loneliness.",
+  openGraph: {
+    description:
+      "Small group therapy programmes for adults, with a maximum of four participants. Explore support for depression, anxiety and loneliness.",
+    title: "Group Therapy in Copenhagen",
+    type: "website",
+    url: "/therapy/group",
+  },
+  title: "Group Therapy in Copenhagen",
+};
 
 export default function GroupTherapy() {
   return (

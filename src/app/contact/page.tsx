@@ -1,7 +1,24 @@
 import { ClipboardButton } from "@/views/components/ui";
 import { ContactForm } from "@/views/components/layout";
+import type { Metadata } from "next";
 import styles from "./styles.module.css";
 import { NavbarContact, Whatsapp } from "@/views/components/icons";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/contact",
+  },
+  description:
+    "Get in touch with Jesica Cecchetto about individual therapy, group therapy or gender-affirming counselling in Copenhagen. Contact by email, WhatsApp or online form.",
+  openGraph: {
+    description:
+      "Get in touch with Jesica Cecchetto about individual therapy, group therapy or gender-affirming counselling in Copenhagen.",
+    title: "Contact | Psychotherapist in Copenhagen",
+    type: "website",
+    url: "/contact",
+  },
+  title: "Contact | Psychotherapist in Copenhagen",
+};
 
 export default function Contact() {
   return (

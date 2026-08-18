@@ -36,10 +36,14 @@
   max-width: 650px;
 }
 
+.imageContainer {
+  max-width: 500px;
+  width: 100%;
+}
+
 .imageWrapper {
   aspect-ratio: 4 / 5;
   border-radius: 32px;
-  max-width: 500px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -47,6 +51,23 @@
 
 .image {
   object-fit: cover;
+}
+
+.imageCaption {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.imageCaption strong {
+  font-size: 0.9rem;
+}
+
+.imageCaption span {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
 }
 
 .approachSection,
@@ -314,22 +335,6 @@
 }
 
 @media (min-width: 768px) {
-  .hero {
-    display: grid;
-    gap: 4rem;
-    grid-template-columns: 1.1fr 0.9fr;
-    min-height: 75vh;
-    text-align: left;
-  }
-
-  .heroContent {
-    align-items: flex-start;
-  }
-
-  .imageWrapper {
-    max-width: none;
-  }
-
   .personalSection {
     display: grid;
     gap: 5rem;
@@ -357,12 +362,20 @@
 
 @media (min-width: 992px) {
   .hero {
+    display: grid;
     flex-direction: row;
+    gap: 4rem;
+    grid-template-columns: 1.1fr 0.9fr;
+    min-height: 75vh;
     text-align: left;
   }
 
   .heroContent {
     align-items: flex-start;
+  }
+
+  .imageWrapper {
+    max-width: none;
   }
 
   .grid {

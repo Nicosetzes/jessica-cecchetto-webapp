@@ -1,5 +1,6 @@
 import { CTALink } from "./views/components/ui";
 import Image from "next/image";
+import type { Metadata } from "next";
 import styles from "./styles.module.css";
 import { CARDS, PRESENTATION_CARDS } from "./constants";
 import {
@@ -8,6 +9,12 @@ import {
   PresentationCards,
   SelfAssessmentToast,
 } from "@/views/components/layout";
+
+export const metadata: Metadata = {
+  title: "Psychotherapy in Copenhagen | Jesica Cecchetto",
+  description:
+    "Evidence-based individual, group and gender-affirming psychotherapy in Copenhagen. Support for anxiety, depression, loneliness, grief and life transitions.",
+};
 
 export default function Home() {
   return (
@@ -61,9 +68,9 @@ export default function Home() {
         <div className={styles.aboutImage}>
           <Image
             fill
-            src="/images/jesica-01.jpg"
             alt="Psychotherapist"
             className={styles.image}
+            src="/images/jesica-01.jpg"
           />
         </div>
         <div className={styles.aboutContent}>

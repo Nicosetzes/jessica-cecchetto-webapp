@@ -1,7 +1,24 @@
 import { Check } from "@/views/components/icons";
 import Image from "next/image";
+import type { Metadata } from "next";
 import styles from "./styles.module.css";
 import { Closure, SelfAssessmentToast } from "@/views/components/layout";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/about",
+  },
+  description:
+    "Meet Jesica Cecchetto, a psychotherapist in Copenhagen offering structured, collaborative and evidence-based therapy, with training in CBT, Systemic Therapy and DBT.",
+  title: "About | Psychotherapist in Copenhagen",
+  openGraph: {
+    description:
+      "Learn about Jesica's therapeutic approach, professional training and experience supporting adults through individual and group therapy.",
+    title: "About | Psychotherapist in Copenhagen",
+    url: "/about",
+    type: "website",
+  },
+};
 
 export default function About() {
   return (
@@ -35,14 +52,21 @@ export default function About() {
             understanding.
           </p>
         </div>
-        <div className={styles.imageWrapper}>
-          <Image
-            fill
-            preload
-            alt="Jesica"
-            className={styles.image}
-            src="/images/jesica-hero.jpg"
-          />
+        <div className={styles.imageContainer}>
+          <div className={styles.imageWrapper}>
+            <Image
+              fill
+              preload
+              alt="Jesica Cecchetto, psychologist and psychotherapist"
+              className={styles.image}
+              src="/images/jesica-hero.jpg"
+            />
+          </div>
+          <div className={styles.imageCaption}>
+            <strong>Jesica Cecchetto</strong>
+            <span>-</span>
+            <span>Psychologist &amp; Psychotherapist</span>
+          </div>
         </div>
       </section>
       <section className={`section ${styles.approachSection}`}>

@@ -1,4 +1,5 @@
 import { CARDS } from "./constants";
+import type { Metadata } from "next";
 import styles from "./styles.module.css";
 import {
   Cards,
@@ -6,6 +7,22 @@ import {
   PracticeInfo,
   SelfAssessmentToast,
 } from "@/views/components/layout";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/therapy/individual",
+  },
+  description:
+    "Individual therapy for adults in Copenhagen, available in person and online. A confidential and supportive space to explore emotions, life challenges and personal growth.",
+  openGraph: {
+    description:
+      "A confidential and supportive space to explore emotions, life challenges and personal growth, with in-person and online sessions.",
+    title: "Individual Therapy for Adults in Copenhagen",
+    type: "website",
+    url: "/therapy/individual",
+  },
+  title: "Individual Therapy for Adults in Copenhagen",
+};
 
 export default function IndividualTherapy() {
   return (

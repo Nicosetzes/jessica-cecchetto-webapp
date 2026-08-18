@@ -1,65 +1,22 @@
-"use client";
+import type { Metadata } from "next";
+import SelfAssessment from "./SelfAssessment";
 
-import { QUESTIONS } from "./constants";
-import type { SelfAssessmentAnswers } from "@/types";
-import { calculateAssessmentResult } from "@/utils";
-import { Introduction, ProgressBar, Result, Step } from "./components";
-import { useEffect, useState } from "react";
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/self-assessment",
+  },
+  description:
+    "Take a short self-assessment to reflect on your emotional wellbeing and better understand whether therapy may be helpful for you.",
+  openGraph: {
+    description:
+      "A short self-assessment to reflect on your emotional wellbeing and consider whether therapy may be helpful for you.",
+    title: "Self-Assessment | Jesica Cecchetto",
+    type: "website",
+    url: "/self-assessment",
+  },
+  title: "Self-Assessment",
+};
 
-export default function SelfAssessment() {
-  const [answers, setAnswers] = useState<SelfAssessmentAnswers>({});
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [started, setStarted] = useState(false);
-
-  const currentQuestionData = QUESTIONS[currentQuestion];
-  const isFinished = currentQuestion === QUESTIONS.length;
-
-  useEffect(() => {
-    if (started) {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-  }, [started, currentQuestion]);
-
-  const handleAnswer = (value: boolean): void => {
-    const questionId = QUESTIONS[currentQuestion].id;
-
-    setAnswers((prev) => ({
-      ...prev,
-      [questionId]: value,
-    }));
-  };
-
-  const handleNext = (): void => {
-    setCurrentQuestion((prev) => Math.min(prev + 1, QUESTIONS.length));
-  };
-
-  const handlePrevious = (): void => {
-    setCurrentQuestion((prev) => Math.max(prev - 1, 0));
-  };
-
-  if (!started) {
-    return <Introduction onStart={() => setStarted(true)} />;
-  }
-
-  if (isFinished) {
-    return <Result result={calculateAssessmentResult(answers)} />;
-  }
-
-  return (
-    <section className="section">
-      <ProgressBar current={currentQuestion + 1} total={QUESTIONS.length} />
-      <Step
-        currentQuestion={currentQuestion}
-        question={currentQuestionData}
-        totalQuestions={QUESTIONS.length}
-        value={answers[currentQuestionData.id]}
-        onAnswer={handleAnswer}
-        onNext={handleNext}
-        onPrevious={handlePrevious}
-      />
-    </section>
-  );
+export default function Page() {
+  return <SelfAssessment />;
 }

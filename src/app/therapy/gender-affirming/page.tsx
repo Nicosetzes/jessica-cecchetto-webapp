@@ -1,4 +1,5 @@
 import { GENDER_AFFIRMING_CARDS } from "./constants";
+import type { Metadata } from "next";
 import styles from "./styles.module.css";
 import {
   Closure,
@@ -6,6 +7,22 @@ import {
   PracticeInfo,
   SelfAssessmentToast,
 } from "@/views/components/layout";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/therapy/gender-affirming",
+  },
+  description:
+    "Gender-affirming counselling in Copenhagen for gender-diverse and LGBTQ+ individuals, offering a supportive, respectful and individualized therapeutic space.",
+  openGraph: {
+    description:
+      "A supportive, respectful and individualized space for gender-diverse and LGBTQ+ individuals.",
+    title: "Gender-Affirming Counselling in Copenhagen",
+    type: "website",
+    url: "/therapy/gender-affirming",
+  },
+  title: "Gender-Affirming Counselling in Copenhagen",
+};
 
 export default function GenderAffirmingCounselling() {
   return (
